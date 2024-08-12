@@ -6,7 +6,8 @@ import logo from "../assets/images/logo.png";
 import Partners from "../assets/images/icons/Partners.png";
 import App from "../assets/images/icons/App.png";
 import Driver from "../assets/images/icons/driver.png";
-
+import Deliveroo from "../assets/images/Deliveroo.png";
+import { FaCheck  } from 'react-icons/fa';
 function layout() {
     const blocks = [
         {
@@ -95,9 +96,7 @@ function layout() {
                                         </a>
                                     </li>
                                     <li>
-                                        <span className="dropdown-divider">
-                                            {" "}
-                                        </span>
+                                        <span className="dropdown-divider"></span>
                                     </li>
                                     <li>
                                         <a className="dropdown-item" href="#">
@@ -190,8 +189,97 @@ function layout() {
                 </div>
             </div>
             <ThreeBlocks blocks={blocks} />
+            <section className="deliveroo my-5 py-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6 d-flex">
+                            <div className="my-auto">
+                                <p className="fs-2">
+                                    How can Deliveroo help your business?
+                                </p>
+                                <p className="smtxt">
+                                    When you become a Deliveroo partner, we’ll
+                                    send you everything you need to get started,
+                                    including signage, a tablet and a wireless
+                                    printer.
+                                </p>
+                                <p className="smtxt"><FaCheck color="#059372" /> 24 hr tablet support</p>
+                                <p className="smtxt"><FaCheck color="#059372" /> Flexible payment plan</p>
+                                <p className="smtxt"><FaCheck color="#059372" /> Use Deliveroo's rider network or your own
+                                </p>
+                                <p className="smtxt"><FaCheck color="#059372" /> Help marketing your business with savings on
+                                    photography and websites
+                                </p>
+                                <p className="smtxt"><FaCheck color="#059372" /> Create loyal customers with Hub insights and
+                                    tools
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 d-flex">
+                            <img src={Deliveroo} className="deliveroImg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            
+            <section className="primaryBg py-5">
+                <div className="container my-3">
+                    <div className="text-center mb-5">
+                        <p className=" text-white fs-3 mb-2">
+                            Ways to grow and support your business
+                        </p>
+                        <p className="text-white fs0p9">
+                            Products, services and information for your success
+                            as a Deliveroo partner
+                        </p>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="servicesBlock serviesGrocery">
+                                <div className="servicesContainer">
+                                    <h2>Grocery</h2>
+                                    <p>
+                                        We'll increase your sales with new,
+                                        online customers
+                                    </p>
+                                    <a className="btn btn-primary mt-3">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="servicesBlock serviesPickup">
+                                <div className="servicesContainer">
+                                    <h2>Grocery</h2>
+                                    <p>
+                                        We'll increase your sales with new,
+                                        online customers
+                                    </p>
+                                    <a className="btn btn-primary mt-3">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="servicesBlock serviesMarketing">
+                                <div className="servicesContainer">
+                                    <h2>Grocery</h2>
+                                    <p>
+                                        We'll increase your sales with new,
+                                        online customers
+                                    </p>
+                                    <a className="btn btn-primary mt-3">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }

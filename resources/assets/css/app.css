@@ -10,8 +10,13 @@ body {
     font-family: "Poppins";
     /* background-color: orange; */
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: 'poppinsB';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "poppinsB";
 }
 .logoImg {
     height: 45px;
@@ -41,10 +46,14 @@ h1,h2,h3,h4,h5,h6{
     color: #fff;
 }
 .heroSection {
-    background-image: url(../images/hero1.png);
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/hero1.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     height: 100vh;
     display: flex;
 }
@@ -62,13 +71,13 @@ h1,h2,h3,h4,h5,h6{
 .heroContainer p {
     font-size: 1.2rem;
 }
-.negativeTop{
-    margin-top: -130px !important;
+.negativeTop {
+    margin-top: -140px !important;
 }
-.smnNgativeTop{
+.smnNgativeTop {
     margin-top: -60px !important;
 }
-.servicesBlock{
+.servicesBlock {
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
@@ -76,36 +85,76 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 12px;
 }
 .serviesRestaurant {
-    background-image: url(../images/Restaurent.png);
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/Restaurent.png) !important;
 }
 .serviesGrocery {
-    background-image: url(../images/Grocery.png);
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/Grocery.png) !important;
+}
+.serviesMarketing {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/Marketing.png) !important;
+}
+.serviesPickup {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/Pickup.png) !important;
 }
 .servicesContainer {
     position: absolute;
-    bottom: 3rem;
-    left: 3rem;
+    bottom: 2.2rem;
+    left: 2.2rem;
     color: #fff;
 }
-.servicesContainer p{
+.servicesContainer p {
     margin-bottom: 1.3rem;
 }
-.ThreeBlocks{
+.ThreeBlocks {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 12px;
 }
-.ThreeBlocksIcon{
+.ThreeBlocksIcon {
     height: 80px;
     max-width: 120px;
 }
-.ThreeBlockstitle{
+.ThreeBlockstitle {
     font-size: 1.8rem;
     margin: 1rem 0 0.2rem;
 }
-.ThreeBlockssubTitle{
+.ThreeBlockssubTitle {
     color: #828585;
     font-size: 0.9rem;
 }
-.mb4p5{
+.mb4p5 {
     margin-bottom: 2.2rem !important;
+}
+.fs0p9{
+   font-size: 0.9rem;
+}
+.smtxt{
+   color: #585C5C;
+   font-size: 0.9rem;
+}
+.primaryBg{
+    background-color: #006B52;
+}
+.deliveroImg{
+    margin: auto;
+    width: 85%;
 }
