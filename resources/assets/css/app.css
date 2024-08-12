@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "PoppinsB";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+body {
+    font-family: "Poppins";
+    /* background-color: orange; */
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'poppinsB';
+}
+.logoImg {
+    height: 45px;
+    width: auto;
+}
+.bg-fadeBlack {
+    background-color: #0000009e;
+    position: absolute;
+    width: 100%;
+}
+.btn-primary {
+    background-color: #059372;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    margin: auto;
+}
+.btn-white {
+    background-color: #fff;
+    color: #059372;
+}
+.navbar-nav {
+    gap: 1rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link {
+    color: #fff;
+}
+.heroSection {
+    background-image: url(../images/hero1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+.heroContainer {
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.heroContainer h2 {
+    font-family: "poppinsB";
+    font-size: 3rem;
+}
+.heroContainer p {
+    font-size: 1.2rem;
+}
+.negativeTop{
+    margin-top: -130px !important;
+}
+.smnNgativeTop{
+    margin-top: -60px !important;
+}
+.servicesBlock{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    border-radius: 12px;
+}
+.serviesRestaurant {
+    background-image: url(../images/Restaurent.png);
+}
+.serviesGrocery {
+    background-image: url(../images/Grocery.png);
+}
+.servicesContainer {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    color: #fff;
+}
+.servicesContainer p{
+    margin-bottom: 1.3rem;
+}
+.ThreeBlocks{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 12px;
+}
+.ThreeBlocksIcon{
+    height: 80px;
+    max-width: 120px;
+}
+.ThreeBlockstitle{
+    font-size: 1.8rem;
+    margin: 1rem 0 0.2rem;
+}
+.ThreeBlockssubTitle{
+    color: #828585;
+    font-size: 0.9rem;
+}
+.mb4p5{
+    margin-bottom: 2.2rem !important;
+}
