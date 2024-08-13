@@ -308,8 +308,8 @@ function layout() {
                             <div className="my-auto">
                                 <div className="stepBlock d-flex py-2 position-relative">
                                     <div>
-                                        <div class="step-circle"></div>
-                                        <div class="dashed-line"></div>
+                                        <div className="step-circle"></div>
+                                        <div className="dashed-line"></div>
                                     </div>
                                     <div className="ms-4 mt-1">
                                         <p className="fs-5">Sign up</p>
@@ -322,8 +322,8 @@ function layout() {
                                 </div>
                                 <div className="stepBlock d-flex py-2 position-relative">
                                     <div>
-                                        <div class="step-circle"></div>
-                                        <div class="dashed-line"></div>
+                                        <div className="step-circle"></div>
+                                        <div className="dashed-line"></div>
                                     </div>
                                     <div className="ms-4 mt-1">
                                         <p className="fs-5">Set up</p>
@@ -334,7 +334,7 @@ function layout() {
                                 </div>
                                 <div className="stepBlock d-flex py-2 position-relative">
                                     <div>
-                                        <div class="step-circle"></div>
+                                        <div className="step-circle"></div>
                                     </div>
                                     <div className="ms-4 mt-1">
                                         <p className="fs-5">Sell</p>
