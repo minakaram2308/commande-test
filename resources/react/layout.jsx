@@ -7,7 +7,14 @@ import Partners from "../assets/images/icons/Partners.png";
 import App from "../assets/images/icons/App.png";
 import Driver from "../assets/images/icons/driver.png";
 import Deliveroo from "../assets/images/Deliveroo.png";
-import { FaCheck  } from 'react-icons/fa';
+import partnersLogos from "../assets/images/partnersLogos.png";
+import RightCornerBuilding from "../assets/images/RightCornerBuilding.png";
+import LeftCornerBuilding from "../assets/images/LeftCornerBuilding.png";
+import Steps from "../assets/images/steps.png";
+import Accordion from "react-bootstrap/Accordion";
+import { FaCheck } from "react-icons/fa";
+import Footer from "./components/Footer";
+
 function layout() {
     const blocks = [
         {
@@ -48,7 +55,7 @@ function layout() {
                         className="collapse navbar-collapse"
                         id="navbarSupportedContent"
                     >
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                             <li className="nav-item">
                                 <a
                                     className="nav-link active"
@@ -144,14 +151,14 @@ function layout() {
                 </div>
             </nav>
 
-            <div className="heroSection">
+            <section className="heroSection">
                 <div className="heroContainer">
                     <h2>Become a Commande partner</h2>
                     <p>Together we can hep you reach more customers</p>
                     <a className="btn btn-primary">Create account</a>
                 </div>
-            </div>
-            <div className="servicesSection negativeTop">
+            </section>
+            <section className="servicesSection negativeTop">
                 <h3 className="text-center mb-5 text-white">
                     Learn about our services for business like yours
                 </h3>
@@ -187,7 +194,7 @@ function layout() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <ThreeBlocks blocks={blocks} />
             <section className="deliveroo my-5 py-5">
                 <div className="container">
@@ -203,15 +210,26 @@ function layout() {
                                     including signage, a tablet and a wireless
                                     printer.
                                 </p>
-                                <p className="smtxt"><FaCheck color="#059372" /> 24 hr tablet support</p>
-                                <p className="smtxt"><FaCheck color="#059372" /> Flexible payment plan</p>
-                                <p className="smtxt"><FaCheck color="#059372" /> Use Deliveroo's rider network or your own
+                                <p className="smtxt">
+                                    <FaCheck color="#059372" /> 24 hr tablet
+                                    support
                                 </p>
-                                <p className="smtxt"><FaCheck color="#059372" /> Help marketing your business with savings on
-                                    photography and websites
+                                <p className="smtxt">
+                                    <FaCheck color="#059372" /> Flexible payment
+                                    plan
                                 </p>
-                                <p className="smtxt"><FaCheck color="#059372" /> Create loyal customers with Hub insights and
-                                    tools
+                                <p className="smtxt">
+                                    <FaCheck color="#059372" /> Use Deliveroo's
+                                    rider network or your own
+                                </p>
+                                <p className="smtxt">
+                                    <FaCheck color="#059372" /> Help marketing
+                                    your business with savings on photography
+                                    and websites
+                                </p>
+                                <p className="smtxt">
+                                    <FaCheck color="#059372" /> Create loyal
+                                    customers with Hub insights and tools
                                 </p>
                             </div>
                         </div>
@@ -280,6 +298,156 @@ function layout() {
                     </div>
                 </div>
             </section>
+            <section className="commandeSteps py-5">
+                <div className="container my-3">
+                    <div className="row">
+                        <div className="col-md-6 d-flex">
+                            <img src={Steps} className="deliveroImg" />
+                        </div>
+                        <div className="col-md-6 d-flex">
+                            <div className="my-auto">
+                                <div className="stepBlock d-flex py-2 position-relative">
+                                    <div>
+                                        <div class="step-circle"></div>
+                                        <div class="dashed-line"></div>
+                                    </div>
+                                    <div className="ms-4 mt-1">
+                                        <p className="fs-5">Sign up</p>
+                                        <p className="smtxt">
+                                            Partner with Deliveroo and tell us
+                                            about your business - you'll need
+                                            your FSA rating to get started
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="stepBlock d-flex py-2 position-relative">
+                                    <div>
+                                        <div class="step-circle"></div>
+                                        <div class="dashed-line"></div>
+                                    </div>
+                                    <div className="ms-4 mt-1">
+                                        <p className="fs-5">Set up</p>
+                                        <p className="smtxt">
+                                        Upload a menu and share your store hours
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="stepBlock d-flex py-2 position-relative">
+                                    <div>
+                                        <div class="step-circle"></div>
+                                    </div>
+                                    <div className="ms-4 mt-1">
+                                        <p className="fs-5">Sell</p>
+                                        <p className="smtxt">
+                                        Watch the orders come in and track them via Hub
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div className="container">
+                    <div className="createAccount d-flex justify-content-between align-items-center">
+                        <p className="fs-4 text-white ms-5 mb-0">
+                            Not a Commande partner yet?
+                        </p>
+                        <a className="btn btn-primary mx-5">Create Account</a>
+                    </div>
+                </div>
+            </section>
+            <section className="joinCommunity pt-5">
+                <p className="text-center fs-3 my-5">
+                    Join a community of businesses partnered with Deliveroo
+                </p>
+                <div className="d-flex position-relative h-300">
+                    <img src={partnersLogos} className="partnersLogos" />
+                    <img
+                        src={RightCornerBuilding}
+                        className="RightCornerBuilding"
+                    />
+                    <img
+                        src={LeftCornerBuilding}
+                        className="LeftCornerBuilding"
+                    />
+                </div>
+            </section>
+            <section className="primaryBg py-5">
+                <div className="container my-3">
+                    <div className="text-center mb-5">
+                        <p className=" text-white fs-3 mb-2">
+                            Ways to grow and support your business
+                        </p>
+                    </div>
+                    <div className="row justify-content-center">
+                        <div className="col-md-9">
+                            <Accordion>
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header>
+                                        Do I need an FSA rating to join
+                                        Deliveroo?
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header>
+                                        Our riders or your own deliveries?
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header>
+                                        What should I do when I need support?
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <Footer />
         </div>
     );
 }
