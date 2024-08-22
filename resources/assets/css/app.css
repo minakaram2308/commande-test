@@ -73,12 +73,26 @@ button:focus:not(:focus-visible) {
     height: 100vh;
     display: flex;
 }
+.groceryHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/groceryPartnerHero.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+
 .heroContainer {
     color: #fff;
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-top: 26%;
 }
 .heroContainer h2 {
     font-family: "poppinsB";
@@ -143,6 +157,7 @@ button:focus:not(:focus-visible) {
     margin-bottom: 1.3rem;
 }
 .ThreeBlocks {
+    background-color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 12px;
 }
@@ -168,12 +183,22 @@ button:focus:not(:focus-visible) {
     color: #585c5c;
     font-size: 0.9rem;
 }
+.primaryC {
+    color: #006b52;
+}
+.secC{
+    color: #059372;
+}
 .primaryBg {
     background-color: #006b52;
 }
 .deliveroImg {
     margin: 0 auto;
     width: 85%;
+}
+.greenDeliveroImg {
+    margin: 1rem auto;
+    width: 100%;
 }
 .dashed-line {
     position: absolute;
@@ -191,6 +216,10 @@ button:focus:not(:focus-visible) {
     border: 8px solid #85d5c8;
     border-radius: 50%;
     display: inline-block;
+}
+.primaryBg .step-circle {
+    background-color: #ffffff;
+    border: 8px solid #4d9886;
 }
 .createAccount {
     background-image: url(../images/createAccount.png);
