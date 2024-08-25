@@ -85,7 +85,30 @@ button:focus:not(:focus-visible) {
     height: 100vh;
     display: flex;
 }
-
+.RestaurantHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/RestaurantPartnerHero.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.FoodDeliveryHeroSection{
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/foodDeliveryHero.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
 .heroContainer {
     color: #fff;
     margin: auto;
