@@ -9,6 +9,10 @@ import SalesWithPickup from "./pages/SalesWithPickup";
 import MarketingandPromotions from "./pages/MarketingandPromotions";
 import OurTechnology from "./pages/OurTechnology";
 import ProfessionalPhotography from "./pages/ProfessionalPhotography";
+import ManageBusiness from "./pages/ManageBusiness";
+import GetInTouch from "./pages/GetInTouch";
+import PartnerSuccess from "./pages/PartnerSuccess";
+import EditionsKitchen from "./pages/EditionsKitchen";
 
 function layout() {
     return (
@@ -28,15 +32,17 @@ function layout() {
             {/* 7 */}
             {/* <OurTechnology /> */}
             {/* 8 */}
-            <ProfessionalPhotography />
+            {/* <ProfessionalPhotography /> */}
             {/* 9 */}
+            {/* <ManageBusiness /> */}
             {/* 10 */}
+            {/* <GetInTouch /> */}
             {/* 11 */}
+            {/* <PartnerSuccess /> */}
             {/* 12 */}
+            <EditionsKitchen />
             {/* 13 */}
             {/* 14 */}
-
-           
         </div>
     );
 }

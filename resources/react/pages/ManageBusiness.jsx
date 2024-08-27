@@ -2,60 +2,73 @@ import React from "react";
 import ThreeBlocks from "../components/ThreeBlocks";
 import logo from "../../assets/images/logo.png";
 import Partners from "../../assets/images/icons/Partners.png";
-import screen from "../../assets/images/icons/screen.png";
-import bill from "../../assets/images/icons/bill.png";
-import plate from "../../assets/images/icons/plate.png";
-import foodimage from "../../assets/images/icons/foodimage.png";
-import owndevice from "../../assets/images/icons/owndevice.png";
-import commandedevice from "../../assets/images/icons/commandedevice.png";
+import clients from "../../assets/images/icons/clients.png";
+import Driver from "../../assets/images/icons/driver.png";
 import Deliveroo from "../../assets/images/Deliveroo.png";
+import stone from "../../assets/images/icons/stone.png";
+import time from "../../assets/images/icons/time.png";
 import partnersLogos from "../../assets/images/partnersLogos.png";
 import RightCornerBuilding from "../../assets/images/RightCornerBuilding.png";
 import LeftCornerBuilding from "../../assets/images/LeftCornerBuilding.png";
 import Steps from "../../assets/images/steps.png";
+import whatismarketer from "../../assets/images/whatismarketer.png";
+import ideaa from "../../assets/images/ideaa.png";
+import logos from "../../assets/images/logos.png";
+
 import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function ProfessionalPhotography() {
+function ManageBusiness() {
     const blocks = [
         {
-            iconPath: foodimage,
-            title: "Get noticed",
-            subtitle: "Restaurant partners globally",
+            iconPath: clients,
+            title: "Rider network",
+            subtitle: "A global network of over 100,000 riders",
         },
         {
-            iconPath: plate,
-            title: "Showcase your food",
-            subtitle: "Meals delivered globally",
+            iconPath: stone,
+            title: "Grow your sales",
+            subtitle: "Reach more customers and get a sales boost of up to 30%",
         },
         {
-            iconPath: bill,
-            title: "Increase orders",
-            subtitle: "Average meal delivery time",
+            iconPath: time,
+            title: "30 minutes",
+            subtitle: "Our average delivery time for customer orders",
         },
     ];
     return (
         <div className="layout">
             <Navbar />
-            <section className="ProfessionalPhotographyHeroSection">
+            <section className="ManageBusinessHeroSection">
                 <div className="heroContainer">
-                    <h2>Professional Restaurant Photography</h2>
-                    <p>Boost sales by up to 24% by adding menu imagery</p>
-                    <a className="btn btn-primary">Signup</a>
+                    <h2>Manage your business anywhere</h2>
+                    <p>
+                        Manage your performance and easily make changes based on
+                        Deliveroo insights, with Hub
+                    </p>
+                    <a className="btn btn-primary">Login</a>
                 </div>
             </section>
-            <ThreeBlocks
-                blocks={blocks}
-                noTitle={true}
-                classes={"negativeTop"}
-            />
 
-            <section className="deliveroo my-5 py-5">
+            <section className="primaryBg py-5">
+                <ThreeBlocks
+                    blocks={blocks}
+                    noTitle={true}
+                    classes={"negativeTop"}
+                />
+                <h3 className="text-center text-white mb-4">
+                Introducing Hub
+                </h3>
+                <div className="container">
+                    <img src={whatismarketer} className="img-fluid" />
+                </div>
+            </section>
+            <section className="deliveroo my-5 pt-5">
                 <div className="container">
                     <h3 className="text-center mb-5">
-                        Make sure your digital shopfront shines
+                        Helping your business to grow
                     </h3>
                     <div className="row">
                         <div className="col-md-6 d-flex">
@@ -112,31 +125,8 @@ function ProfessionalPhotography() {
                 </div>
             </section>
 
-            <section className="PhotographyBg py-5">
-                <div className="container my-auto">
-                    <div className="row justify-content-end">
-                        <div className="col-md-4">
-                            <div className="primaryBg text-white p-4">
-                                <h5>Great first impressions</h5>
-                                <p className="mt-3 mb-0 smtxt text-white">
-                                    Deliveroo connects customers with the best
-                                    food in their area - and like a bustling
-                                    food hall, the competition is hot.
-                                    <br />
-                                    <br /> Professional food photography helps
-                                    more customers to choose your restaurant.
-                                    Showcasing your best dishes brings your menu
-                                    to life and lets hungry customers decide
-                                    what to order.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="pt-4">
-                <div className="container mt-5">
+            <section>
+                <div className="container">
                     <div className="createAccount d-flex justify-content-between align-items-center">
                         <p className="fs-4 text-white ms-5 mb-0">
                             Not a Commande partner yet?
@@ -158,7 +148,7 @@ function ProfessionalPhotography() {
                         </p>
                     </div>
 
-                    <div className="row justify-content-center">
+                    <div className="row">
                         <div className="col-md-4">
                             <div className="servicesBlock serviesGrocery">
                                 <div className="servicesContainer">
@@ -176,7 +166,21 @@ function ProfessionalPhotography() {
                         <div className="col-md-4">
                             <div className="servicesBlock serviesPickup">
                                 <div className="servicesContainer">
-                                    <h2>Pickup</h2>
+                                    <h2>Technology</h2>
+                                    <p>
+                                        We'll increase your sales with new,
+                                        online customers
+                                    </p>
+                                    <a className="btn btn-primary mt-3">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="servicesBlock serviesMarketing">
+                                <div className="servicesContainer">
+                                    <h2>Delivery</h2>
                                     <p>
                                         We'll increase your sales with new,
                                         online customers
@@ -195,7 +199,7 @@ function ProfessionalPhotography() {
                 <div className="container my-3">
                     <div className="text-center mb-5">
                         <p className=" text-white fs-3 mb-2">
-                            Frequently asked questions
+                            Ways to grow and support your business
                         </p>
                     </div>
                     <div className="row justify-content-center">
@@ -268,4 +272,4 @@ function ProfessionalPhotography() {
         </div>
     );
 }
-export default ProfessionalPhotography;
+export default ManageBusiness;

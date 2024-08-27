@@ -8,7 +8,7 @@
 }
 body {
     font-family: "Poppins";
-    background-color: #FBFBFB;
+    background-color: #fbfbfb;
 }
 h1,
 h2,
@@ -146,8 +146,7 @@ button:focus:not(:focus-visible) {
     display: flex;
 }
 
-
-.ProfessionalPhotographyHeroSection{
+.ProfessionalPhotographyHeroSection {
     background-image: linear-gradient(
             0deg,
             rgb(0 0 0 / 89%) 0%,
@@ -157,6 +156,49 @@ button:focus:not(:focus-visible) {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+}
+.ManageBusinessHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/heros/Managebusiness.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.PartnerSuccessHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/heros/Partnersuccesstools.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.EditionsKitchenHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/heros/Signatureservice.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.PhotographyBg {
+    background-image: url(../images/PhotographyBg.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 450px;
     display: flex;
 }
 .heroContainer {
@@ -264,7 +306,7 @@ button:focus:not(:focus-visible) {
 .secC {
     color: #059372;
 }
-.secBg{
+.secBg {
     background-color: #059372;
 }
 .greyC {
@@ -359,25 +401,25 @@ footer {
 .accordion-button:focus {
     box-shadow: 0 0 0 0.25rem #0daf893d;
 }
-.deliverooOrder1{
+.deliverooOrder1 {
     background-color: #fff;
     border-radius: 0 0 0 12px;
 }
-.deliverooOrder1 .secBg{
+.deliverooOrder1 .secBg {
     border-radius: 12px 0 0 0;
 }
-.deliverooOrder2{
+.deliverooOrder2 {
     background-color: #fff;
     border-radius: 0 0 12px 0;
 }
-.blueBg{
-    background-color: #4791F5;
+.blueBg {
+    background-color: #4791f5;
 }
-.deliverooOrder2 .blueBg{
+.deliverooOrder2 .blueBg {
     border-radius: 0 12px 0 0;
 }
-.br-1{
-    border-right: 1px solid #C6C6C6;
+.br-1 {
+    border-right: 1px solid #c6c6c6;
 }
 @media only screen and (max-width: 768px) {
     .heroSection {
