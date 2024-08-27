@@ -6,6 +6,9 @@ import GroceryPartner from "./pages/GroceryPartner";
 import RestaurantPartner from "./pages/RestaurantPartner";
 import FoodDelivery from "./pages/FoodDelivery";
 import SalesWithPickup from "./pages/SalesWithPickup";
+import MarketingandPromotions from "./pages/MarketingandPromotions";
+import OurTechnology from "./pages/OurTechnology";
+import ProfessionalPhotography from "./pages/ProfessionalPhotography";
 
 function layout() {
     return (
@@ -19,10 +22,13 @@ function layout() {
             {/* 4 */}
             {/* <FoodDelivery /> */}
             {/* 5 */}
-            <SalesWithPickup />
+            {/* <SalesWithPickup /> */}
             {/* 6 */}
+            {/* <MarketingandPromotions /> */}
             {/* 7 */}
+            {/* <OurTechnology /> */}
             {/* 8 */}
+            <ProfessionalPhotography />
             {/* 9 */}
             {/* 10 */}
             {/* 11 */}

@@ -1,10 +1,10 @@
 import React from "react";
 
-function ThreeBlocks({ blocks, classes }) {
+function ThreeBlocks({ blocks, classes, noTitle }) {
     return (
         <div className={`container ${classes}`}>
             <div className="ThreeBlocks container text-center py-5 my-5">
-                <p className="mb4p5 fs-4">We 're here to deliver</p>
+           {!noTitle &&  <p className="mb4p5 fs-4">We 're here to deliver</p>}  
                 <div className="row">
                     {blocks.map((block, index) => (
                         <div key={index} className="col-md-4">

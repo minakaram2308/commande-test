@@ -2,10 +2,9 @@ import React from "react";
 import ThreeBlocks from "../components/ThreeBlocks";
 import logo from "../../assets/images/logo.png";
 import Partners from "../../assets/images/icons/Partners.png";
-import Grow from "../../assets/images/icons/Grow.png";
-import basket from "../../assets/images/icons/basket.png";
-import halfhour from "../../assets/images/icons/half-hour.png";
 import Driver from "../../assets/images/icons/driver.png";
+import bill from "../../assets/images/icons/bill.png";
+import chat from "../../assets/images/icons/chat.png";
 import Deliveroo from "../../assets/images/Deliveroo.png";
 import partnersLogos from "../../assets/images/partnersLogos.png";
 import RightCornerBuilding from "../../assets/images/RightCornerBuilding.png";
@@ -24,12 +23,12 @@ function SalesWithPickup() {
             subtitle: "A global network of over 100,000 riders",
         },
         {
-            iconPath: Grow,
+            iconPath: bill,
             title: "Grow your sales",
             subtitle: "Reach more customers and get a sales boost of up to 30%",
         },
         {
-            iconPath: halfhour,
+            iconPath: chat,
             title: "30 minutes",
             subtitle: "Our average delivery time for customer orders",
         },
@@ -37,7 +36,7 @@ function SalesWithPickup() {
     return (
         <div className="layout">
             <Navbar />
-            <section className="FoodDeliveryHeroSection">
+            <section className="saleswithpickupHeroSection">
                 <div className="heroContainer">
                     <h2>Grow your sales with Pickup</h2>
                     <p>
@@ -53,7 +52,7 @@ function SalesWithPickup() {
             <section className="deliveroo my-5 py-5">
                 <div className="container">
                     <h3 className="text-center mb-5">
-                        Your food, delivered by the experts
+                    The benefits of Pickup
                     </h3>
                     <div className="row">
                         <div className="col-md-6 d-flex">
@@ -164,11 +163,10 @@ function SalesWithPickup() {
                 <div className="container my-3">
                     <div className="text-center mb-5">
                         <p className="fs-3 mb-2">
-                            Ways to grow and support your business
+                        Flexible ordering, for you and your customers
                         </p>
                         <p className="fs0p9">
-                            Products, services and information for your success
-                            as a Deliveroo partner
+                        A few more ways we can help you to generate more customer orders
                         </p>
                     </div>
 
@@ -176,10 +174,9 @@ function SalesWithPickup() {
                         <div className="col-md-4">
                             <div className="servicesBlock serviesGrocery">
                                 <div className="servicesContainer">
-                                    <h2>Pickup</h2>
+                                    <h2>Delivery</h2>
                                     <p>
-                                        We'll increase your sales with new,
-                                        online customers
+                                    Give your customers the best possible experience and create long-term growth by offering delivery.
                                     </p>
                                     <a className="btn btn-primary mt-3">
                                         Find out more

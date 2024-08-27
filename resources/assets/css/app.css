@@ -8,7 +8,7 @@
 }
 body {
     font-family: "Poppins";
-    /* background-color: orange; */
+    background-color: #FBFBFB;
 }
 h1,
 h2,
@@ -67,7 +67,7 @@ button:focus:not(:focus-visible) {
             rgb(0 0 0 / 89%) 0%,
             rgb(255 255 255 / 0%) 100%
         ),
-        url(../images/hero1.png) !important;
+        url(../images/heros/hero1.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -79,7 +79,7 @@ button:focus:not(:focus-visible) {
             rgb(0 0 0 / 89%) 0%,
             rgb(255 255 255 / 0%) 100%
         ),
-        url(../images/groceryPartnerHero.png) !important;
+        url(../images/heros/groceryPartnerHero.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -91,19 +91,69 @@ button:focus:not(:focus-visible) {
             rgb(0 0 0 / 89%) 0%,
             rgb(255 255 255 / 0%) 100%
         ),
-        url(../images/RestaurantPartnerHero.png) !important;
+        url(../images/heros/RestaurantPartnerHero.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
 }
-.FoodDeliveryHeroSection{
+.FoodDeliveryHeroSection {
     background-image: linear-gradient(
             0deg,
             rgb(0 0 0 / 89%) 0%,
             rgb(255 255 255 / 0%) 100%
         ),
-        url(../images/foodDeliveryHero.png) !important;
+        url(../images/heros/foodDeliveryHero.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.saleswithpickupHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/heros/saleswithpickup.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.MarketingsHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/heros/MarketingandPromotions.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.OurTechnologyHeroSection {
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/heros/OurTechnology.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+
+
+.ProfessionalPhotographyHeroSection{
+    background-image: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 89%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        ),
+        url(../images/heros/ProfessionalRestaurant.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -116,6 +166,7 @@ button:focus:not(:focus-visible) {
     display: flex;
     flex-direction: column;
     margin-top: 26%;
+    gap: 0.5rem;
 }
 .heroContainer h2 {
     font-family: "poppinsB";
@@ -195,6 +246,7 @@ button:focus:not(:focus-visible) {
 .ThreeBlockssubTitle {
     color: #828585;
     font-size: 0.9rem;
+    margin: 0;
 }
 .mb4p5 {
     margin-bottom: 2.2rem !important;
@@ -209,8 +261,14 @@ button:focus:not(:focus-visible) {
 .primaryC {
     color: #006b52;
 }
-.secC{
+.secC {
     color: #059372;
+}
+.secBg{
+    background-color: #059372;
+}
+.greyC {
+    color: #828585;
 }
 .primaryBg {
     background-color: #006b52;
@@ -300,6 +358,26 @@ footer {
 }
 .accordion-button:focus {
     box-shadow: 0 0 0 0.25rem #0daf893d;
+}
+.deliverooOrder1{
+    background-color: #fff;
+    border-radius: 0 0 0 12px;
+}
+.deliverooOrder1 .secBg{
+    border-radius: 12px 0 0 0;
+}
+.deliverooOrder2{
+    background-color: #fff;
+    border-radius: 0 0 12px 0;
+}
+.blueBg{
+    background-color: #4791F5;
+}
+.deliverooOrder2 .blueBg{
+    border-radius: 0 12px 0 0;
+}
+.br-1{
+    border-right: 1px solid #C6C6C6;
 }
 @media only screen and (max-width: 768px) {
     .heroSection {
