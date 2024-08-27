@@ -13,6 +13,7 @@ import ManageBusiness from "./pages/ManageBusiness";
 import GetInTouch from "./pages/GetInTouch";
 import PartnerSuccess from "./pages/PartnerSuccess";
 import EditionsKitchen from "./pages/EditionsKitchen";
+import SignatureService from "./pages/SignatureService";
 
 function layout() {
     return (
@@ -40,9 +41,12 @@ function layout() {
             {/* 11 */}
             {/* <PartnerSuccess /> */}
             {/* 12 */}
-            <EditionsKitchen />
+            {/* <EditionsKitchen /> */}
             {/* 13 */}
+            <SignatureService />
             {/* 14 */}
+            {/* 15 */}
+            {/* 16 */}
         </div>
     );
 }

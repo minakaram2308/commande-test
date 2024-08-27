@@ -3,10 +3,10 @@ import ThreeBlocks from "../components/ThreeBlocks";
 import logo from "../../assets/images/logo.png";
 import Partners from "../../assets/images/icons/Partners.png";
 import App from "../../assets/images/icons/App.png";
-import bus from "../../assets/images/icons/bus.png";
+import stone from "../../assets/images/icons/stone.png";
 import Deliveroo from "../../assets/images/Deliveroo.png";
-import maps from "../../assets/images/icons/maps.png";
-import resources from "../../assets/images/icons/resources.png";
+import clients from "../../assets/images/icons/clients.png";
+import grow from "../../assets/images/icons/grow.png";
 import partnersLogos from "../../assets/images/partnersLogos.png";
 import RightCornerBuilding from "../../assets/images/RightCornerBuilding.png";
 import LeftCornerBuilding from "../../assets/images/LeftCornerBuilding.png";
@@ -20,22 +20,22 @@ import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function EditionsKitchen() {
+function SignatureService() {
     const blocks = [
         {
-            iconPath: bus,
+            iconPath: stone,
             title: "Everything included",
             subtitle:
                 "Partners prepare amazing food for their customers - we look after everything else, including delivery",
         },
         {
-            iconPath: maps,
+            iconPath: clients,
             title: "Hand-picked locations",
             subtitle:
                 "Our data helps us bring global favourites and the best independents to more customers than ever",
         },
         {
-            iconPath: resources,
+            iconPath: grow,
             title: "High, high standards",
             subtitle:
                 "100% of our kitchens are 5-star EHO rated or equivalent, we're hot on hygiene and safety",
@@ -46,12 +46,12 @@ function EditionsKitchen() {
             <Navbar />
             <section className="EditionsKitchenHeroSection">
                 <div className="heroContainer">
-                    <h2>Editions, our delivery-only ‘dark’ kitchens</h2>
+                    <h2>Introducing our Signature service</h2>
                     <p>
-                        Editions connects growing businesses with hungry
-                        customers, in brand new areas
+                        Transform your website or app into a branded ordering
+                        platform and grow your sales
                     </p>
-                    <a className="btn btn-primary">Signup</a>
+                    <a className="btn btn-primary">Enquire now</a>
                 </div>
             </section>
             <ThreeBlocks
@@ -116,43 +116,21 @@ function EditionsKitchen() {
                         <div className="col-md-6 d-flex">
                             <img src={Deliveroo} className="greenDeliveroImg" />
                         </div>
-
-                        <div className="col-md-6 d-flex">
-                            <img src={Deliveroo} className="greenDeliveroImg" />
-                        </div>
-                        <div className="col-md-6 d-flex">
-                            <div className="my-auto">
-                                <p className="fs-2">Increase sales</p>
-                                <p className="smtxt">
-                                    Reach more customers in a larger area with
-                                    our grocery delivery service - more
-                                    customers means more sales.
-                                </p>
-                                <p className="primaryC secC fw-bold">
-                                    Find out more about delivery Label
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="primaryBg py-5">
-                <h3 className="text-center text-white mb-5">
-                    Take a look inside
-                </h3>
-                <div className="container">
-                    <p className="text-white">
-                        With Editions restaurants in 5 countries, we can now
-                        fulfil even more delivery orders with affordable,
-                        custom, delivery-only kitchens.
-                        <br /> <br />
-                        Watch the video below, to see what goes on inside an
-                        Editions site.
-                    </p>
-                    <img src={whatismarketer} className="img-fluid" />
+            <section>
+                <div className="container mt-5">
+                    <div className="createAccount d-flex justify-content-between align-items-center">
+                        <p className="fs-4 text-white ms-5 mb-0">
+                            Not a Commande partner yet?
+                        </p>
+                        <a className="btn btn-primary mx-5">Create Account</a>
+                    </div>
                 </div>
             </section>
+
             <section className="deliveroo my-5 py-5">
                 <div className="container">
                     <p className="fs-2 mb-1 text-center">
@@ -191,6 +169,60 @@ function EditionsKitchen() {
                         </div>
                     </div>
                     <img src={logos} className="mt-5 img-fluid m-auto" />
+                </div>
+            </section>
+            <section className="servicesSection mb-5">
+                <h3 className="text-center">
+                    Learn about our services for business like yours
+                </h3>
+                <p className="smtxt text-center mb-5">
+                        Trusted by restaurants and takeaways all over the world
+                    </p>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="servicesBlock serviesGrocery">
+                                <div className="servicesContainer">
+                                    <h2>Packaging</h2>
+                                    <p>
+                                        We'll increase your sales with new,
+                                        online customers
+                                    </p>
+                                    <a className="btn btn-primary mt-3">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="servicesBlock serviesPickup">
+                                <div className="servicesContainer">
+                                    <h2>Technology</h2>
+                                    <p>
+                                        We'll increase your sales with new,
+                                        online customers
+                                    </p>
+                                    <a className="btn btn-primary mt-3">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="servicesBlock serviesMarketing">
+                                <div className="servicesContainer">
+                                    <h2>Delivery</h2>
+                                    <p>
+                                        We'll increase your sales with new,
+                                        online customers
+                                    </p>
+                                    <a className="btn btn-primary mt-3">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -266,80 +298,9 @@ function EditionsKitchen() {
                         </div>
                     </div>
                 </div>
-                <div className="container mt-5 my-3">
-                    <div className="text-center mb-5">
-                        <p className=" text-white fs-3 mb-2">
-                            Ways to grow and support your business
-                        </p>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="col-md-9">
-                            <Accordion>
-                                <Accordion.Item eventKey="0">
-                                    <Accordion.Header>
-                                        Do I need an FSA rating to join
-                                        Deliveroo?
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim
-                                        id est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="1">
-                                    <Accordion.Header>
-                                        Our riders or your own deliveries?
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim
-                                        id est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="2">
-                                    <Accordion.Header>
-                                        What should I do when I need support?
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim
-                                        id est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
-                        </div>
-                    </div>
-                </div>
             </section>
             <Footer />
         </div>
     );
 }
-export default EditionsKitchen;
+export default SignatureService;
