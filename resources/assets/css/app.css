@@ -18,9 +18,13 @@ h5,
 h6 {
     font-family: "poppinsB";
 }
+
 .logoImg {
     height: 40px;
     width: auto;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #059372;
 }
 .bg-fadeBlack {
     background-color: #0000009e;
@@ -42,6 +46,10 @@ h6 {
     color: #059372;
     padding: 0.7rem 1.5rem;
     border: none;
+}
+.btn-white:hover {
+    color: #fff;
+    background-color: #059372;
 }
 .navbar-nav {
     gap: 1rem;
