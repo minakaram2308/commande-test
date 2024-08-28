@@ -36,7 +36,7 @@ function GroceryPartner() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="groceryHeroSection">
                 <div className="heroContainer">
                     <h2>Become a Commande Grocery partner</h2>
@@ -357,7 +357,7 @@ function GroceryPartner() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

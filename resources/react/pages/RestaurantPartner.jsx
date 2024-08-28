@@ -36,7 +36,7 @@ function RestaurantPartner() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="RestaurantHeroSection">
                 <div className="heroContainer">
                     <h2>Become a Commande Restaurent partner</h2>
@@ -358,7 +358,7 @@ function RestaurantPartner() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

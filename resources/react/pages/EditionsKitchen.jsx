@@ -43,7 +43,7 @@ function EditionsKitchen() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="EditionsKitchenHeroSection">
                 <div className="heroContainer">
                     <h2>Editions, our delivery-only ‘dark’ kitchens</h2>
@@ -338,7 +338,7 @@ function EditionsKitchen() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

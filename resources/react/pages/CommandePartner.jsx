@@ -34,7 +34,6 @@ function CommandePartner() {
     ];
     return (
         <div className="layout">
-            <Navbar />
             <section className="heroSection">
                 <div className="heroContainer">
                     <h2>Become a Commande partner</h2>
@@ -333,7 +332,7 @@ function CommandePartner() {
                     </div>
                 </div>
             </section>
-            <Footer />
+           
         </div>
     );
 }

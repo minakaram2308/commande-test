@@ -35,7 +35,7 @@ function SalesWithPickup() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="saleswithpickupHeroSection">
                 <div className="heroContainer">
                     <h2>Grow your sales with Pickup</h2>
@@ -261,7 +261,7 @@ function SalesWithPickup() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

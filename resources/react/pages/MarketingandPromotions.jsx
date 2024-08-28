@@ -40,7 +40,7 @@ function MarketingandPromotions() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="MarketingsHeroSection">
                 <div className="heroContainer">
                     <h2>Marketing and Promotions</h2>
@@ -309,7 +309,7 @@ function MarketingandPromotions() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

@@ -43,7 +43,7 @@ function PartnerSuccess() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="PartnerSuccessHeroSection">
                 <div className="heroContainer">
                     <h2>Partner success tools</h2>
@@ -360,7 +360,7 @@ function PartnerSuccess() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

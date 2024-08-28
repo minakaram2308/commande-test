@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
+import { Link } from 'react-router-dom';
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-fadeBlack">
@@ -66,9 +67,12 @@ function Navbar() {
                                 aria-labelledby="navbarDropdown"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/grocery"
+                                    >
                                         Grocery
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a className="dropdown-item" href="#">

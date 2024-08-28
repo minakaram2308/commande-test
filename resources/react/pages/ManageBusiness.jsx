@@ -40,7 +40,7 @@ function ManageBusiness() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="ManageBusinessHeroSection">
                 <div className="heroContainer">
                     <h2>Manage your business anywhere</h2>
@@ -268,7 +268,7 @@ function ManageBusiness() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

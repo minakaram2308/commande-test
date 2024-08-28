@@ -43,7 +43,7 @@ function SignatureService() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="EditionsKitchenHeroSection">
                 <div className="heroContainer">
                     <h2>Introducing our Signature service</h2>
@@ -299,7 +299,7 @@ function SignatureService() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

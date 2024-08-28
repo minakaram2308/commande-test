@@ -36,7 +36,7 @@ function FoodDelivery() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="FoodDeliveryHeroSection">
                 <div className="heroContainer">
                     <h2>World-class food delivery</h2>
@@ -260,7 +260,7 @@ function FoodDelivery() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

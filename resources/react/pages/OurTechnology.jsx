@@ -38,7 +38,7 @@ function OurTechnology() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="OurTechnologyHeroSection">
                 <div className="heroContainer">
                     <h2>Our Technology</h2>
@@ -329,7 +329,7 @@ function OurTechnology() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

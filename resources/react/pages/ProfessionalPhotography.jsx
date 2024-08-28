@@ -38,7 +38,7 @@ function ProfessionalPhotography() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="ProfessionalPhotographyHeroSection">
                 <div className="heroContainer">
                     <h2>Professional Restaurant Photography</h2>
@@ -264,7 +264,7 @@ function ProfessionalPhotography() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }

@@ -38,7 +38,7 @@ function GetInTouch() {
     ];
     return (
         <div className="layout">
-            <Navbar />
+            
             <section className="ManageBusinessHeroSection">
                 <div className="heroContainer">
                     <h2>Get in touch</h2>
@@ -256,7 +256,7 @@ function GetInTouch() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
     );
 }
