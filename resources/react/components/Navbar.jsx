@@ -1,11 +1,14 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 function Navbar() {
+    const location = useLocation();
+    const isLogin = location.pathname === '/Login';
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-fadeBlack">
+        <nav className={`navbar navbar-expand-lg navbar-light bg-fadeBlack ${isLogin ? 'position-relative' : ''}`}>
             <div className="container">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" to="#">
                     <img src={logo} alt="" className="logoImg" />
                 </a>
                 <button
@@ -27,7 +30,7 @@ function Navbar() {
                         <li className="nav-item dropdown">
                             <a
                                 className="nav-link dropdown-toggle"
-                                href="#"
+                                to="#"
                                 id="navbarDropdown"
                                 role="button"
                                 data-bs-toggle="dropdown"
@@ -40,21 +43,27 @@ function Navbar() {
                                 aria-labelledby="navbarDropdown"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/FoodDelivery"
+                                    >
                                         Delivery
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/SalesWithPickup"
+                                    >
                                         Pickup
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
                             <a
                                 className="nav-link dropdown-toggle"
-                                href="#"
+                                to="#"
                                 id="navbarDropdown"
                                 role="button"
                                 data-bs-toggle="dropdown"
@@ -69,15 +78,18 @@ function Navbar() {
                                 <li>
                                     <Link
                                         className="dropdown-item"
-                                        to="/grocery"
+                                        to="/GroceryPartner"
                                     >
                                         Grocery
                                     </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/RestaurantPartner"
+                                    >
                                         Restaurant
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
@@ -85,7 +97,7 @@ function Navbar() {
                         <li className="nav-item dropdown">
                             <a
                                 className="nav-link dropdown-toggle"
-                                href="#"
+                                to="#"
                                 id="navbarDropdown"
                                 role="button"
                                 data-bs-toggle="dropdown"
@@ -98,36 +110,36 @@ function Navbar() {
                                 aria-labelledby="navbarDropdown"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link className="dropdown-item" to="/MarketingandPromotions">
                                         Marketing
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link className="dropdown-item" to="/SalesWithPickup">
                                         Packaging
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link className="dropdown-item" to="/OurTechnology">
                                         Technology
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link className="dropdown-item" to="/ProfessionalPhotography">
                                         Food Photography
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <Link className="dropdown-item" to="/EditionsKitchen">
                                         Restaurant Hub
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
                             <a
                                 className="nav-link dropdown-toggle"
-                                href="#"
+                                to="#"
                                 id="navbarDropdown"
                                 role="button"
                                 data-bs-toggle="dropdown"
@@ -140,27 +152,27 @@ function Navbar() {
                                 aria-labelledby="navbarDropdown"
                             >
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <a className="dropdown-item" to="/">
                                         Resources
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <a className="dropdown-item" to="/">
                                         Contact
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="#">
+                                    <a className="dropdown-item" to="/">
                                         Help
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="btn btn-white">Login</a>
+                            <Link className="btn btn-white" to="/Login">Login</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="btn btn-primary">Become a partner</a>
+                            <Link className="btn btn-primary" to="/Login">Become a partner</Link>
                         </li>
                     </ul>
                     {/* <div className="d-flex">

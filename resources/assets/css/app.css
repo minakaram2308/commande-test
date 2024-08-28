@@ -23,7 +23,8 @@ h6 {
     height: 40px;
     width: auto;
 }
-.nav-link:focus, .nav-link:hover{
+.nav-link:focus,
+.nav-link:hover {
     color: #059372;
 }
 .bg-fadeBlack {
@@ -331,6 +332,18 @@ button:focus:not(:focus-visible) {
     margin: 1rem auto;
     width: 100%;
 }
+.h100vh {
+    height: calc(100vh - 82px);
+}
+.form-control {
+    background-color: #f7f7f7 !important;
+    border: none !important;
+    line-height: 2;
+}
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 .dashed-line {
     position: absolute;
     top: 30%;
@@ -428,6 +441,10 @@ footer {
 }
 .br-1 {
     border-right: 1px solid #c6c6c6;
+}
+.loginContainer {
+    background-color: #fff;
+    border: 1px solid #E4E5EE;
 }
 @media only screen and (max-width: 768px) {
     .heroSection {
