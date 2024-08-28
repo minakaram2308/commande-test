@@ -22,26 +22,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Login() {
-    const blocks = [
-        {
-            iconPath: stone,
-            title: "Everything included",
-            subtitle:
-                "Partners prepare amazing food for their customers - we look after everything else, including delivery",
-        },
-        {
-            iconPath: clients,
-            title: "Hand-picked locations",
-            subtitle:
-                "Our data helps us bring global favourites and the best independents to more customers than ever",
-        },
-        {
-            iconPath: grow,
-            title: "High, high standards",
-            subtitle:
-                "100% of our kitchens are 5-star EHO rated or equivalent, we're hot on hygiene and safety",
-        },
-    ];
     return (
         <div className="layout">
             <section className="servicesSection d-flex h100vh">

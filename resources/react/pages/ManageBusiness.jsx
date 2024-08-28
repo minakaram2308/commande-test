@@ -19,6 +19,7 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function ManageBusiness() {
     const blocks = [
@@ -40,7 +41,6 @@ function ManageBusiness() {
     ];
     return (
         <div className="layout">
-            
             <section className="ManageBusinessHeroSection">
                 <div className="heroContainer">
                     <h2>Manage your business anywhere</h2>
@@ -49,6 +49,7 @@ function ManageBusiness() {
                         Deliveroo insights, with Hub
                     </p>
                     <a className="btn btn-primary">Login</a>
+                    <Link className="btn btn-primary" to="/Login">Login</Link>
                 </div>
             </section>
 
