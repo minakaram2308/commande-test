@@ -42,7 +42,7 @@ function MarketingandPromotions() {
         <div className="layout">
             
             <section className="MarketingsHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Marketing and Promotions</h2>
                     <p>
                         Reach new, local customers with our marketing and

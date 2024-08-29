@@ -335,7 +335,7 @@ button:focus:not(:focus-visible) {
 .h100vh {
     height: calc(100vh - 82px);
 }
-.form-control {
+.loginSection .form-control {
     background-color: #f7f7f7 !important;
     border: none !important;
     line-height: 2;
@@ -444,12 +444,28 @@ footer {
 }
 .loginContainer {
     background-color: #fff;
-    border: 1px solid #E4E5EE;
+    border: 1px solid #e4e5ee;
 }
 @media only screen and (max-width: 768px) {
-    .heroSection {
-        height: 650px;
+    .heroSection,
+    .groceryHeroSection,
+    .RestaurantHeroSection,
+    .FoodDeliveryHeroSection,
+    .saleswithpickupHeroSection,
+    .MarketingsHeroSection,
+    .OurTechnologyHeroSection,
+    .ProfessionalPhotographyHeroSection,
+    .ManageBusinessHeroSection,
+    .PartnerSuccessHeroSection,
+    .EditionsKitchenHeroSection {
+        height: 600px;
         background-position: center;
+    }
+    .heroContainer {
+        margin-top: calc(50% - 60px);
+    }
+    .heroContainer h2 {
+        font-size: 2rem;
     }
     .servicesBlock {
         background-position: center;
@@ -479,5 +495,12 @@ footer {
     .footerBlock {
         text-align: center;
         min-height: unset;
+    }
+    .h100vh {
+        height: auto;
+    }
+    .my-mob {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
     }
 }

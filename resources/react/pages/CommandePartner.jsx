@@ -35,7 +35,7 @@ function CommandePartner() {
     return (
         <div className="layout">
             <section className="heroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Become a Commande partner</h2>
                     <p>Together we can hep you reach more customers</p>
                     <a className="btn btn-primary">Create account</a>

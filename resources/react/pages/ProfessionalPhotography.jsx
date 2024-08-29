@@ -40,7 +40,7 @@ function ProfessionalPhotography() {
         <div className="layout">
             
             <section className="ProfessionalPhotographyHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Professional Restaurant Photography</h2>
                     <p>Boost sales by up to 24% by adding menu imagery</p>
                     <a className="btn btn-primary">Signup</a>

@@ -40,7 +40,7 @@ function GetInTouch() {
         <div className="layout">
             
             <section className="ManageBusinessHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Get in touch</h2>
                     <p>
                         Have a question, need help or want some advice? We’re

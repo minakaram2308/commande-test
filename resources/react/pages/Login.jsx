@@ -24,14 +24,14 @@ import Footer from "../components/Footer";
 function Login() {
     return (
         <div className="layout">
-            <section className="servicesSection d-flex h100vh">
+            <section className="loginSection d-flex h100vh">
                 <div className="container my-auto">
                     <div className="row">
                         <div className="col-md-6 d-flex">
-                            <img src={login} className="img-fluid my-auto" />
+                            <img src={login} className="img-fluid my-auto d-md-block d-lg-block d-none" />
                         </div>
                         <div className="col-md-6 d-flex">
-                            <div className="loginContainer my-auto p-5">
+                            <div className="loginContainer my-auto my-mob p-5">
                                 <img src={greenLogo} className="mb-4" />
                                 <h2>Welcome to <br /> Restaurent hub</h2>
                                 <p>

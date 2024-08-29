@@ -45,7 +45,7 @@ function PartnerSuccess() {
         <div className="layout">
             
             <section className="PartnerSuccessHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Partner success tools</h2>
                     <p>
                         Support your success on Deliveroo with our tools and

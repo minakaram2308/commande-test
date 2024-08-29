@@ -45,7 +45,7 @@ function SignatureService() {
         <div className="layout">
             
             <section className="EditionsKitchenHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Introducing our Signature service</h2>
                     <p>
                         Transform your website or app into a branded ordering

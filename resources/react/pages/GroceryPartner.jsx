@@ -38,7 +38,7 @@ function GroceryPartner() {
         <div className="layout">
             
             <section className="groceryHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Become a Commande Grocery partner</h2>
                     <p>
                         Let us help your grocery business reach more customers

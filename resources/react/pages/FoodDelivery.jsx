@@ -38,7 +38,7 @@ function FoodDelivery() {
         <div className="layout">
             
             <section className="FoodDeliveryHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>World-class food delivery</h2>
                     <p>
                     Give your customers the best possible experience and create long-term growth by offering delivery

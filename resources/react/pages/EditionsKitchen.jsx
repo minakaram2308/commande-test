@@ -45,7 +45,7 @@ function EditionsKitchen() {
         <div className="layout">
             
             <section className="EditionsKitchenHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Editions, our delivery-only ‘dark’ kitchens</h2>
                     <p>
                         Editions connects growing businesses with hungry

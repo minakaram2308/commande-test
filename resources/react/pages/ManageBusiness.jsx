@@ -42,7 +42,7 @@ function ManageBusiness() {
     return (
         <div className="layout">
             <section className="ManageBusinessHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Manage your business anywhere</h2>
                     <p>
                         Manage your performance and easily make changes based on

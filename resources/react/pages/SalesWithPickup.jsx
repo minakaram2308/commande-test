@@ -37,7 +37,7 @@ function SalesWithPickup() {
         <div className="layout">
             
             <section className="saleswithpickupHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Grow your sales with Pickup</h2>
                     <p>
                         Allows customers to collect orders direct from you.

@@ -40,7 +40,7 @@ function OurTechnology() {
         <div className="layout">
             
             <section className="OurTechnologyHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Our Technology</h2>
                     <p>
                         World-class tech to help you streamline operations and

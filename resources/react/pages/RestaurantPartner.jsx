@@ -38,7 +38,7 @@ function RestaurantPartner() {
         <div className="layout">
             
             <section className="RestaurantHeroSection">
-                <div className="heroContainer">
+                <div className="heroContainer container">
                     <h2>Become a Commande Restaurent partner</h2>
                     <p>
                     Let us help your grocery business reach more customers
