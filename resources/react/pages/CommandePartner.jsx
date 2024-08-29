@@ -13,6 +13,7 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
 
 function CommandePartner() {
     const blocks = [
@@ -36,9 +37,15 @@ function CommandePartner() {
         <div className="layout">
             <section className="heroSection">
                 <div className="heroContainer container">
-                    <h2>Become a Commande partner</h2>
-                    <p>Together we can hep you reach more customers</p>
-                    <a className="btn btn-primary">Create account</a>
+                    <Fade bottom duration={1500}>
+                        <h2>Become a Commande partner</h2>
+                    </Fade>
+                    <Fade bottom duration={1500}>
+                        <p>Together we can hep you reach more customers</p>
+                    </Fade>
+                    <Fade bottom duration={1500}>
+                        <a className="btn btn-primary">Create account</a>
+                    </Fade>
                 </div>
             </section>
             <section className="servicesSection negativeTop">
@@ -47,34 +54,38 @@ function CommandePartner() {
                 </h3>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
-                            <div className="servicesBlock serviesRestaurant">
-                                <div className="servicesContainer">
-                                    <h2>Restaurent</h2>
-                                    <p>
-                                        We can handle delivery, so you can focus
-                                        on the food
-                                    </p>
-                                    <a className="btn btn-primary">
-                                        Find out more
-                                    </a>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-6">
+                                <div className="servicesBlock serviesRestaurant">
+                                    <div className="servicesContainer">
+                                        <h2>Restaurent</h2>
+                                        <p>
+                                            We can handle delivery, so you can
+                                            focus on the food
+                                        </p>
+                                        <a className="btn btn-primary">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Grocery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-6">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Grocery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
@@ -84,7 +95,7 @@ function CommandePartner() {
                     <div className="row">
                         <div className="col-md-6 d-flex">
                             <div className="my-auto">
-                                <p className="fs-2">
+                            <Fade bottom duration={1500}>    <p className="fs-2">
                                     How can Deliveroo help your business?
                                 </p>
                                 <p className="smtxt">
@@ -92,32 +103,51 @@ function CommandePartner() {
                                     send you everything you need to get started,
                                     including signage, a tablet and a wireless
                                     printer.
-                                </p>
-                                <p className="smtxt">
-                                    <FaCheck color="#059372" /> 24 hr tablet
-                                    support
-                                </p>
-                                <p className="smtxt">
-                                    <FaCheck color="#059372" /> Flexible payment
-                                    plan
-                                </p>
-                                <p className="smtxt">
-                                    <FaCheck color="#059372" /> Use Deliveroo's
-                                    rider network or your own
-                                </p>
-                                <p className="smtxt">
-                                    <FaCheck color="#059372" /> Help marketing
-                                    your business with savings on photography
-                                    and websites
-                                </p>
-                                <p className="smtxt">
-                                    <FaCheck color="#059372" /> Create loyal
-                                    customers with Hub insights and tools
-                                </p>
+                                </p></Fade>
+                            
+                                <Fade bottom duration={1500}>
+                                    
+                                    <p className="smtxt">
+                                        <FaCheck color="#059372" /> 24 hr tablet
+                                        support
+                                    </p>
+                                </Fade>
+                                <Fade bottom duration={1700}>
+                                    
+                                    <p className="smtxt">
+                                        <FaCheck color="#059372" /> Flexible
+                                        payment plan
+                                    </p>
+                                </Fade>
+                                <Fade bottom duration={1900}>
+                                    
+                                    <p className="smtxt">
+                                        <FaCheck color="#059372" /> Use
+                                        Deliveroo's rider network or your own
+                                    </p>
+                                </Fade>
+                                <Fade bottom duration={2100}>
+                                    
+                                    <p className="smtxt">
+                                        <FaCheck color="#059372" /> Help
+                                        marketing your business with savings on
+                                        photography and websites
+                                    </p>
+                                </Fade>
+                                <Fade bottom duration={2300}>
+                                    
+                                    <p className="smtxt">
+                                        <FaCheck color="#059372" /> Create loyal
+                                        customers with Hub insights and tools
+                                    </p>
+                                </Fade>
                             </div>
                         </div>
                         <div className="col-md-6 d-flex">
-                            <img src={Deliveroo} className="deliveroImg" />
+                            <Fade bottom duration={1500}>
+                                
+                                <img src={Deliveroo} className="deliveroImg" />
+                            </Fade>
                         </div>
                     </div>
                 </div>
@@ -139,42 +169,49 @@ function CommandePartner() {
                         <div className="col-md-4">
                             <div className="servicesBlock serviesGrocery">
                                 <div className="servicesContainer">
-                                    <h2>Grocery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                                    <Fade bottom duration={1500}>
+                                        <h2>Grocery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </Fade>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="servicesBlock serviesPickup">
                                 <div className="servicesContainer">
-                                    <h2>Grocery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                                    <Fade bottom duration={1500}>
+                                        <h2>Grocery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </Fade>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="servicesBlock serviesMarketing">
                                 <div className="servicesContainer">
-                                    <h2>Grocery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                                    <Fade bottom duration={1500}>
+                                        
+                                        <h2>Grocery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </Fade>
                                 </div>
                             </div>
                         </div>
@@ -195,12 +232,16 @@ function CommandePartner() {
                                         <div className="dashed-line"></div>
                                     </div>
                                     <div className="ms-4 mt-1">
-                                        <p className="fs-5">Sign up</p>
-                                        <p className="smtxt">
-                                            Partner with Deliveroo and tell us
-                                            about your business - you'll need
-                                            your FSA rating to get started
-                                        </p>
+                                        <Fade bottom duration={1500}>
+                                            
+                                            <p className="fs-5">Sign up</p>
+                                            <p className="smtxt">
+                                                Partner with Deliveroo and tell
+                                                us about your business - you'll
+                                                need your FSA rating to get
+                                                started
+                                            </p>
+                                        </Fade>
                                     </div>
                                 </div>
                                 <div className="stepBlock d-flex py-2 position-relative">
@@ -209,11 +250,14 @@ function CommandePartner() {
                                         <div className="dashed-line"></div>
                                     </div>
                                     <div className="ms-4 mt-1">
-                                        <p className="fs-5">Set up</p>
-                                        <p className="smtxt">
-                                            Upload a menu and share your store
-                                            hours
-                                        </p>
+                                        <Fade bottom duration={1500}>
+                                            
+                                            <p className="fs-5">Set up</p>
+                                            <p className="smtxt">
+                                                Upload a menu and share your
+                                                store hours
+                                            </p>
+                                        </Fade>
                                     </div>
                                 </div>
                                 <div className="stepBlock d-flex py-2 position-relative">
@@ -221,11 +265,14 @@ function CommandePartner() {
                                         <div className="step-circle"></div>
                                     </div>
                                     <div className="ms-4 mt-1">
-                                        <p className="fs-5">Sell</p>
-                                        <p className="smtxt">
-                                            Watch the orders come in and track
-                                            them via Hub
-                                        </p>
+                                        <Fade bottom duration={1500}>
+                                            
+                                            <p className="fs-5">Sell</p>
+                                            <p className="smtxt">
+                                                Watch the orders come in and
+                                                track them via Hub
+                                            </p>
+                                        </Fade>
                                     </div>
                                 </div>
                             </div>
@@ -235,12 +282,16 @@ function CommandePartner() {
             </section>
             <section>
                 <div className="container">
-                    <div className="createAccount d-flex justify-content-between align-items-center">
-                        <p className="fs-4 text-white ms-5 mb-0">
-                            Not a Commande partner yet?
-                        </p>
-                        <a className="btn btn-primary mx-5">Create Account</a>
-                    </div>
+                    <Fade bottom duration={1500}>
+                        <div className="createAccount d-flex justify-content-between align-items-center">
+                            <p className="fs-4 text-white ms-5 mb-0">
+                                Not a Commande partner yet?
+                            </p>
+                            <a className="btn btn-primary mx-5">
+                                Create Account
+                            </a>
+                        </div>
+                    </Fade>
                 </div>
             </section>
             <section className="joinCommunity pt-5">
@@ -248,7 +299,10 @@ function CommandePartner() {
                     Join a community of businesses partnered with Deliveroo
                 </p>
                 <div className="d-flex position-relative h-300">
-                    <img src={partnersLogos} className="partnersLogos" />
+                    <Fade bottom duration={1500}>
+                        <img src={partnersLogos} className="partnersLogos" />
+                    </Fade>
+
                     <img
                         src={RightCornerBuilding}
                         className="RightCornerBuilding"
@@ -332,7 +386,6 @@ function CommandePartner() {
                     </div>
                 </div>
             </section>
-           
         </div>
     );
 }
