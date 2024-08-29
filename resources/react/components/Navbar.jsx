@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import Modal from "./Modal";
 function Navbar() {
     const location = useLocation();
-    const isLogin = location.pathname === '/Login';
+    const isLogin = location.pathname === "/Login";
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return (
-        <nav className={`navbar navbar-expand-lg navbar-light bg-fadeBlack ${isLogin ? 'position-relative' : ''}`}>
+        <nav
+            className={`navbar navbar-expand-lg navbar-light bg-fadeBlack ${
+                isLogin ? "position-relative" : ""
+            }`}
+        >
             <div className="container">
                 <a className="navbar-brand" to="#">
                     <img src={logo} alt="" className="logoImg" />
@@ -110,27 +120,42 @@ function Navbar() {
                                 aria-labelledby="navbarDropdown"
                             >
                                 <li>
-                                    <Link className="dropdown-item" to="/MarketingandPromotions">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/MarketingandPromotions"
+                                    >
                                         Marketing
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item" to="/SalesWithPickup">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/SalesWithPickup"
+                                    >
                                         Packaging
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item" to="/OurTechnology">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/OurTechnology"
+                                    >
                                         Technology
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item" to="/ProfessionalPhotography">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/ProfessionalPhotography"
+                                    >
                                         Food Photography
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item" to="/EditionsKitchen">
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/EditionsKitchen"
+                                    >
                                         Restaurant Hub
                                     </Link>
                                 </li>
@@ -169,28 +194,174 @@ function Navbar() {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="btn btn-white" to="/Login">Login</Link>
+                            <Link className="btn btn-white" to="/Login">
+                                Login
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="btn btn-primary" to="/Login">Become a partner</Link>
+                            <button
+                                className="btn btn-primary"
+                                onClick={openModal}
+                            >
+                                Become a partner
+                            </button>
                         </li>
                     </ul>
-                    {/* <div className="d-flex">
-                    <input
-                        className="form-control me-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    />
-                    <button
-                        className="btn btn-outline-success"
-                        type="submit"
-                    >
-                        Search
-                    </button>
-                </div> */}
                 </div>
             </div>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+                <h2>ddd </h2>
+                <div>
+                    <div className="mt-3 text-center">
+                        <span>
+                            Business owner details
+                        </span>
+                        <p>
+                            We'll use personal details of the business owner to
+                            get intouch when we need to
+                        </p>
+                    </div>
+                    <form>
+                        <input
+                            type="hidden"
+                            name="_token"
+                            value="V4Z3vdFi8EoGgEMdmGofBX6OGUvMOe1v7jnZEKCj"
+                            autoComplete="off"
+                        />
+                        <div className="row">
+                            <div className="mb-3 col-sm-12">
+                                <label
+                                    htmlFor="f_name"
+                                >
+                                    First name *
+                                </label>
+                                <input
+                                    className="form-control"
+                                    name="f_name"
+                                    id="f_name"
+                                    type="text"
+                                    placeholder="E.g: Joes"
+                                    required=""
+                                />
+                            </div>
+                            <div className="mb-3 col-sm-12">
+                                <label
+                                    htmlFor="l_name"
+                                >
+                                    Last name *
+                                </label>
+                                <input
+                                    className="form-control"
+                                    name="l_name"
+                                    id="l_name"
+                                    type="text"
+                                    placeholder="E.g: Bourdin"
+                                    required=""
+                                />
+                            </div>
+                            <div className="mb-3 col-sm-12">
+                                <label
+                                    htmlFor="phone"
+                                >
+                                    Restaurant or shop phone number *
+                                </label>
+                                <input
+                                    className="form-control"
+                                    name="phone"
+                                    id="phone"
+                                    type="text"
+                                    pattern="^\+\d{12}$"
+                                    placeholder="+440000000000"
+                                    required=""
+                                />
+                            </div>
+                            <div className="mb-3 col-sm-12">
+                                <label
+                                    htmlFor="email"
+                                >
+                                    Email address *
+                                </label>
+                                <input
+                                    className="form-control"
+                                    name="email"
+                                    id="email"
+                                    type="text"
+                                    required=""
+                                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                    placeholder="E.g : Example@example.com"
+                                />
+                                <span
+                                    className="text-muted"
+                                >
+                                    We’ll use this email address to contact you
+                                    directly
+                                </span>
+                            </div>
+                            <div className="mb-3 col-sm-12">
+                                <label
+                                    htmlFor="password"
+                                >
+                                    Create a password*
+                                </label>
+                                <input
+                                    className="form-control"
+                                    name="password"
+                                    id="password"
+                                    type="password"
+                                    required=""
+                                    placeholder="E.g : ****************"
+                                    minLength="10"
+                                />
+                                <span
+                                    className="text-muted"
+                                >
+                                    Minimum 10 characters
+                                </span>
+                            </div>
+                        </div>
+                        <div className="mt-2">
+                            <button
+                                type="submit"
+                                className="btn_custom w-100"
+                                data-bs-target="#staticBackdrop2"
+                            >
+                                Next
+                            </button>
+                            <p className="text-center my-2">
+                                <span>Already have an account?</span>
+                                <a
+                                    href="javascript:"
+                                    className="link"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    Log in
+                                </a>
+                            </p>
+                            <hr  />
+                            <span className="my-2">
+                                For details on our processing of your personal
+                                information please see our
+                                <a className="link">Privacy Policy.</a>
+                            </span>
+                        </div>
+                        <div className="mt-2">
+                            <div
+                                className="progress mt-2"
+                                role="progressbar"
+                                aria-label="Basic example"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div
+                                    className="progress-bar"
+                                ></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </Modal>
         </nav>
     );
 }
