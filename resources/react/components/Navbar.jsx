@@ -195,9 +195,11 @@ function Navbar() {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="btn btn-white" to="/Login">
-                                Login
-                            </Link>
+                            {!isLogin && (
+                                <Link className="btn btn-white" to="/Login">
+                                    Login
+                                </Link>
+                            )}
                         </li>
                         <li className="nav-item">
                             <button
@@ -211,15 +213,13 @@ function Navbar() {
                 </div>
             </div>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
-          
                 <div>
                     <div className="mt-3 text-center">
-                          <img src={greenLogo} className="mb-4" />
-                        <p className="fs-4 mb-1">
-                            Business owner details
-                        </p>
+                        <img src={greenLogo} className="mb-4" />
+                        <p className="fs-4 mb-1">Business owner details</p>
                         <p>
-                            We'll use personal details of the business owner to <br />
+                            We'll use personal details of the business owner to{" "}
+                            <br />
                             get intouch when we need to
                         </p>
                     </div>
@@ -232,11 +232,7 @@ function Navbar() {
                         />
                         <div className="row">
                             <div className="mb-3 col-sm-6">
-                                <label
-                                    htmlFor="f_name"
-                                >
-                                    First name *
-                                </label>
+                                <label htmlFor="f_name">First name *</label>
                                 <input
                                     className="form-control"
                                     name="f_name"
@@ -247,11 +243,7 @@ function Navbar() {
                                 />
                             </div>
                             <div className="mb-3 col-sm-6">
-                                <label
-                                    htmlFor="l_name"
-                                >
-                                    Last name *
-                                </label>
+                                <label htmlFor="l_name">Last name *</label>
                                 <input
                                     className="form-control"
                                     name="l_name"
@@ -262,9 +254,7 @@ function Navbar() {
                                 />
                             </div>
                             <div className="mb-3 col-sm-12">
-                                <label
-                                    htmlFor="phone"
-                                >
+                                <label htmlFor="phone">
                                     Restaurant or shop phone number *
                                 </label>
                                 <input
@@ -278,11 +268,7 @@ function Navbar() {
                                 />
                             </div>
                             <div className="mb-3 col-sm-12">
-                                <label
-                                    htmlFor="email"
-                                >
-                                    Email address *
-                                </label>
+                                <label htmlFor="email">Email address *</label>
                                 <input
                                     className="form-control"
                                     name="email"
@@ -292,17 +278,13 @@ function Navbar() {
                                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                                     placeholder="E.g : Example@example.com"
                                 />
-                                <span
-                                    className="text-muted"
-                                >
+                                <span className="text-muted">
                                     We’ll use this email address to contact you
                                     directly
                                 </span>
                             </div>
                             <div className="mb-3 col-sm-12">
-                                <label
-                                    htmlFor="password"
-                                >
+                                <label htmlFor="password">
                                     Create a password*
                                 </label>
                                 <input
@@ -314,18 +296,14 @@ function Navbar() {
                                     placeholder="E.g : ****************"
                                     minLength="10"
                                 />
-                                <span
-                                    className="text-muted"
-                                >
+                                <span className="text-muted">
                                     Minimum 10 characters
                                 </span>
                             </div>
                         </div>
                         <div className="mt-2">
-                            <button
-                                className="btn btn-primary  w-100"
-                            >
-                               Next
+                            <button className="btn btn-primary  w-100">
+                                Next
                             </button>
                             <p className="text-center my-2">
                                 <span>Already have an account?</span>
@@ -338,7 +316,7 @@ function Navbar() {
                                     Log in
                                 </a>
                             </p>
-                            <hr  />
+                            <hr />
                             <span className="my-2">
                                 For details on our processing of your personal
                                 information please see our
