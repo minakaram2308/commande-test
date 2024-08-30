@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Modal from "./Modal";
+import greenLogo from "../../assets/images/greenLogo.png";
 function Navbar() {
     const location = useLocation();
     const isLogin = location.pathname === "/Login";
@@ -210,14 +211,15 @@ function Navbar() {
                 </div>
             </div>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
-                <h2>ddd </h2>
+          
                 <div>
                     <div className="mt-3 text-center">
-                        <span>
+                          <img src={greenLogo} className="mb-4" />
+                        <p className="fs-4 mb-1">
                             Business owner details
-                        </span>
+                        </p>
                         <p>
-                            We'll use personal details of the business owner to
+                            We'll use personal details of the business owner to <br />
                             get intouch when we need to
                         </p>
                     </div>
@@ -229,7 +231,7 @@ function Navbar() {
                             autoComplete="off"
                         />
                         <div className="row">
-                            <div className="mb-3 col-sm-12">
+                            <div className="mb-3 col-sm-6">
                                 <label
                                     htmlFor="f_name"
                                 >
@@ -244,7 +246,7 @@ function Navbar() {
                                     required=""
                                 />
                             </div>
-                            <div className="mb-3 col-sm-12">
+                            <div className="mb-3 col-sm-6">
                                 <label
                                     htmlFor="l_name"
                                 >
@@ -321,11 +323,9 @@ function Navbar() {
                         </div>
                         <div className="mt-2">
                             <button
-                                type="submit"
-                                className="btn_custom w-100"
-                                data-bs-target="#staticBackdrop2"
+                                className="btn btn-primary  w-100"
                             >
-                                Next
+                               Next
                             </button>
                             <p className="text-center my-2">
                                 <span>Already have an account?</span>
@@ -346,7 +346,7 @@ function Navbar() {
                             </span>
                         </div>
                         <div className="mt-2">
-                            <div
+                            {/* <div
                                 className="progress mt-2"
                                 role="progressbar"
                                 aria-label="Basic example"
@@ -357,7 +357,7 @@ function Navbar() {
                                 <div
                                     className="progress-bar"
                                 ></div>
-                            </div>
+                            </div> */}
                         </div>
                     </form>
                 </div>

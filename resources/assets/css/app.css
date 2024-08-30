@@ -18,7 +18,10 @@ h5,
 h6 {
     font-family: "poppinsB";
 }
-
+a{
+    color: #2e3333;
+    text-decoration: none;
+}
 .logoImg {
     height: 40px;
     width: auto;
@@ -463,16 +466,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
   }
   .modal-lg {
     max-width: 800px; /* Example size for large modals */
   }
+
   .modal-content {
     background: white;
     padding: 20px;
     border-radius: 8px;
     position: relative;
     height: calc(100vh - 70px);
+    overflow-y: scroll;
   }
   
   .modal-close {
