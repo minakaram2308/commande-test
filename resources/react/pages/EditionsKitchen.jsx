@@ -19,6 +19,8 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Fade";
 
 function EditionsKitchen() {
     const blocks = [
@@ -43,15 +45,16 @@ function EditionsKitchen() {
     ];
     return (
         <div className="layout">
-            
             <section className="EditionsKitchenHeroSection">
                 <div className="heroContainer container">
-                    <h2>Editions, our delivery-only ‘dark’ kitchens</h2>
-                    <p>
-                        Editions connects growing businesses with hungry
-                        customers, in brand new areas
-                    </p>
-                    <a className="btn btn-primary">Signup</a>
+                    <Fade bottom duration={1500}>
+                        <h2>Editions, our delivery-only ‘dark’ kitchens</h2>
+                        <p>
+                            Editions connects growing businesses with hungry
+                            customers, in brand new areas
+                        </p>
+                        <a className="btn btn-primary">Signup</a>
+                    </Fade>
                 </div>
             </section>
             <ThreeBlocks
@@ -62,9 +65,12 @@ function EditionsKitchen() {
 
             <section className="deliveroo my-5 py-5">
                 <div className="container">
-                    <h3 className="text-center mb-5">
-                        What is an 'Editions kitchen'?
-                    </h3>
+                    <Fade bottom duration={1500}>
+                        <h3 className="text-center mb-5">
+                            What is an 'Editions kitchen'?
+                        </h3>
+                    </Fade>
+
                     <div className="row">
                         <div className="col-md-6 d-flex">
                             <div className="my-auto">
@@ -138,68 +144,83 @@ function EditionsKitchen() {
             </section>
 
             <section className="primaryBg py-5">
-                <h3 className="text-center text-white mb-5">
-                    Take a look inside
-                </h3>
-                <div className="container">
-                    <p className="text-white">
-                        With Editions restaurants in 5 countries, we can now
-                        fulfil even more delivery orders with affordable,
-                        custom, delivery-only kitchens.
-                        <br /> <br />
-                        Watch the video below, to see what goes on inside an
-                        Editions site.
-                    </p>
-                    <img src={whatismarketer} className="img-fluid" />
-                </div>
+                <Fade bottom duration={1500}>
+                    <h3 className="text-center text-white mb-5">
+                        Take a look inside
+                    </h3>
+                    <div className="container">
+                        <p className="text-white">
+                            With Editions restaurants in 5 countries, we can now
+                            fulfil even more delivery orders with affordable,
+                            custom, delivery-only kitchens.
+                            <br /> <br />
+                            Watch the video below, to see what goes on inside an
+                            Editions site.
+                        </p>
+                        <img src={whatismarketer} className="img-fluid" />
+                    </div>
+                </Fade>
             </section>
             <section className="deliveroo my-5 py-5">
                 <div className="container">
-                    <p className="fs-2 mb-1 text-center">
-                        Success with Marketer offers
-                    </p>
-                    <p className="smtxt text-center mb-5">
-                        Trusted by restaurants and takeaways all over the world
-                    </p>
+                    <Fade bottom duration={1500}>
+                        <p className="fs-2 mb-1 text-center">
+                            Success with Marketer offers
+                        </p>
+                        <p className="smtxt text-center mb-5">
+                            Trusted by restaurants and takeaways all over the
+                            world
+                        </p>
+                    </Fade>
 
                     <div className="row">
-                        <div className="col-md-6 d-flex">
-                            <div className="my-auto">
-                                <img
-                                    src={ideaa}
-                                    className="img-fluid mb-4"
-                                    width={150}
-                                />
-                                <p className="smtxt">
-                                    “We’ve been on Marketer since it first
-                                    launched, and from our very early stages we
-                                    saw massive increases in traffic. The first
-                                    offer we did for 30% off, we saw a 110%
-                                    increase. Every time we use Marketer on
-                                    average we will see about a 50% increase in
-                                    order volumes and the amazing thing is that
-                                    actually, most of the customers then stay to
-                                    continue buying from the Athenian.”
-                                </p>
-                                <p className="smtxt greyC mt-4">
-                                    Tim Vlassis, The Athenian
-                                </p>
+                        <Slide left>
+                            <div className="col-md-6 d-flex">
+                                <div className="my-auto">
+                                    <img
+                                        src={ideaa}
+                                        className="img-fluid mb-4"
+                                        width={150}
+                                    />
+                                    <p className="smtxt">
+                                        “We’ve been on Marketer since it first
+                                        launched, and from our very early stages
+                                        we saw massive increases in traffic. The
+                                        first offer we did for 30% off, we saw a
+                                        110% increase. Every time we use
+                                        Marketer on average we will see about a
+                                        50% increase in order volumes and the
+                                        amazing thing is that actually, most of
+                                        the customers then stay to continue
+                                        buying from the Athenian.”
+                                    </p>
+                                    <p className="smtxt greyC mt-4">
+                                        Tim Vlassis, The Athenian
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-6 d-flex">
-                            <img src={Deliveroo} className="deliveroImg" />
-                        </div>
+                        </Slide>
+                        <Slide right>
+                            <div className="col-md-6 d-flex">
+                                <img src={Deliveroo} className="deliveroImg" />
+                            </div>
+                        </Slide>
                     </div>
-                    <img src={logos} className="mt-5 img-fluid m-auto" />
+                    <Slide up>
+                        
+                        <img src={logos} className="mt-5 img-fluid m-auto" />
+                    </Slide>
                 </div>
             </section>
 
             <section className="primaryBg py-5">
                 <div className="container my-3">
                     <div className="text-center mb-5">
-                        <p className=" text-white fs-3 mb-2">
-                            Ways to grow and support your business
-                        </p>
+                        <Fade bottom duration={1500}>
+                            <p className=" text-white fs-3 mb-2">
+                                Ways to grow and support your business
+                            </p>
+                        </Fade>
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-md-9">
@@ -338,7 +359,6 @@ function EditionsKitchen() {
                     </div>
                 </div>
             </section>
-            
         </div>
     );
 }

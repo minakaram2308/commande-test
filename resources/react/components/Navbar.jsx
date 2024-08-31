@@ -219,7 +219,7 @@ function Navbar() {
                         <img src={greenLogo} className="mb-4" />
                         <p className="fs-4 mb-1">Business owner details</p>
                         <p>
-                            We'll use personal details of the business owner to{" "}
+                            We'll use personal details of the business owner to
                             <br />
                             get intouch when we need to
                         </p>

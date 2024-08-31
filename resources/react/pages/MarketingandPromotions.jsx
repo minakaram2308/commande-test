@@ -19,6 +19,8 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Fade";
 
 function MarketingandPromotions() {
     const blocks = [
@@ -40,16 +42,18 @@ function MarketingandPromotions() {
     ];
     return (
         <div className="layout">
-            
             <section className="MarketingsHeroSection">
-                <div className="heroContainer container">
-                    <h2>Marketing and Promotions</h2>
-                    <p>
-                        Reach new, local customers with our marketing and
-                        promote <br /> your business in a couple of clicks
-                    </p>
-                    <a className="btn btn-primary">Signup</a>
-                </div>
+                <Fade bottom duration={1500}>
+                    {" "}
+                    <div className="heroContainer container">
+                        <h2>Marketing and Promotions</h2>
+                        <p>
+                            Reach new, local customers with our marketing and
+                            promote <br /> your business in a couple of clicks
+                        </p>
+                        <a className="btn btn-primary">Signup</a>
+                    </div>
+                </Fade>
             </section>
 
             <section className="deliveroo my-5 py-5">
@@ -113,53 +117,81 @@ function MarketingandPromotions() {
             </section>
 
             <section className="primaryBg py-5">
-                <h3 className="text-center text-white mb-5">
-                    What is Marketer?
-                </h3>
+                <Fade bottom duration={1500}>
+                    {" "}
+                    <h3 className="text-center text-white mb-5">
+                        What is Marketer?
+                    </h3>
+                </Fade>
+
                 <div className="container">
-                    <p className="text-white">
-                        Marketer is a tool our partners can use to attract
-                        customers looking for deals and the best value for
-                        money. <br /> <br />
-                        Promote your restaurant and implement marketing
-                        strategies by creating offers for specific menu items or
-                        your whole menu, and set a minimum spend. <br /> <br />
-                        Whoever you want to reach, you’ll get valuable insights
-                        from every offer. From sales data and how many new
-                        customers you've gained, to how many people saw your
-                        menu
-                    </p>
+                    <Fade bottom duration={1500}>
+                        {" "}
+                        <p className="text-white">
+                            Marketer is a tool our partners can use to attract
+                            customers looking for deals and the best value for
+                            money. <br /> <br />
+                            Promote your restaurant and implement marketing
+                            strategies by creating offers for specific menu
+                            items or your whole menu, and set a minimum spend.{" "}
+                            <br /> <br />
+                            Whoever you want to reach, you’ll get valuable
+                            insights from every offer. From sales data and how
+                            many new customers you've gained, to how many people
+                            saw your menu
+                        </p>
+                    </Fade>
+
                     <img src={whatismarketer} className="img-fluid" />
                 </div>
             </section>
             <section className="deliveroo my-5 py-5">
                 <div className="container">
-                    <p className="fs-2 mb-1 text-center">
-                    Success with Marketer offers
-                    </p>
-                    <p className="smtxt text-center mb-5">Trusted by restaurants and takeaways all over the world</p>
-                        
+                    <Fade bottom duration={1500}>
+                        {" "}
+                        <p className="fs-2 mb-1 text-center">
+                            Success with Marketer offers
+                        </p>
+                        <p className="smtxt text-center mb-5">
+                            Trusted by restaurants and takeaways all over the
+                            world
+                        </p>
+                    </Fade>
+
                     <div className="row">
-                        <div className="col-md-6 d-flex">
-                            <div className="my-auto">
-                            <img src={ideaa} className="img-fluid mb-4" width={150} />
-                                <p className="smtxt">
-                                    “We’ve been on Marketer since it first
-                                    launched, and from our very early stages we
-                                    saw massive increases in traffic. The first
-                                    offer we did for 30% off, we saw a 110%
-                                    increase. Every time we use Marketer on
-                                    average we will see about a 50% increase in
-                                    order volumes and the amazing thing is that
-                                    actually, most of the customers then stay to
-                                    continue buying from the Athenian.”
-                                </p>
-                                <p className="smtxt greyC mt-4">Tim Vlassis, The Athenian</p>
+                        <Slide left>
+                            <div className="col-md-6 d-flex">
+                                <div className="my-auto">
+                                    <img
+                                        src={ideaa}
+                                        className="img-fluid mb-4"
+                                        width={150}
+                                    />
+                                    <p className="smtxt">
+                                        “We’ve been on Marketer since it first
+                                        launched, and from our very early stages
+                                        we saw massive increases in traffic. The
+                                        first offer we did for 30% off, we saw a
+                                        110% increase. Every time we use
+                                        Marketer on average we will see about a
+                                        50% increase in order volumes and the
+                                        amazing thing is that actually, most of
+                                        the customers then stay to continue
+                                        buying from the Athenian.”
+                                    </p>
+                                    <p className="smtxt greyC mt-4">
+                                        Tim Vlassis, The Athenian
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-6 d-flex">
-                            <img src={Deliveroo} className="deliveroImg" />
-                        </div>
+                        </Slide>
+
+                        <Slide right>
+                            {" "}
+                            <div className="col-md-6 d-flex">
+                                <img src={Deliveroo} className="deliveroImg" />
+                            </div>
+                        </Slide>
                     </div>
                     <img src={logos} className="mt-5 img-fluid m-auto" />
                 </div>
@@ -169,80 +201,101 @@ function MarketingandPromotions() {
             <section>
                 <div className="container">
                     <div className="createAccount d-flex justify-content-between align-items-center">
-                        <p className="fs-4 text-white ms-5 mb-0">
-                            Not a Commande partner yet?
-                        </p>
-                        <a className="btn btn-primary mx-5">Create Account</a>
+                        <Fade bottom duration={1500}>
+                            {" "}
+                            <p className="fs-4 text-white ms-5 mb-0">
+                                Not a Commande partner yet?
+                            </p>
+                            <a className="btn btn-primary mx-5">
+                                Create Account
+                            </a>
+                        </Fade>
                     </div>
                 </div>
             </section>
 
             <section className="py-5">
                 <div className="container my-3">
-                    <div className="text-center mb-5">
-                        <p className="fs-3 mb-2">
-                            Ways to grow and support your business
-                        </p>
-                        <p className="fs0p9">
-                            Products, services and information for your success
-                            as a Deliveroo partner
-                        </p>
-                    </div>
+                    <Fade bottom duration={1500}>
+                        {" "}
+                        <div className="text-center mb-5">
+                            <p className="fs-3 mb-2">
+                                Ways to grow and support your business
+                            </p>
+                            <p className="fs0p9">
+                                Products, services and information for your
+                                success as a Deliveroo partner
+                            </p>
+                        </div>
+                    </Fade>
 
                     <div className="row">
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        <Fade bottom duration={1500}>
+                            {" "}
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            {" "}
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            {" "}
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
 
             <section className="primaryBg py-5">
                 <div className="container my-3">
-                    <div className="text-center mb-5">
-                        <p className=" text-white fs-3 mb-2">
-                            Ways to grow and support your business
-                        </p>
-                    </div>
+                    <Fade bottom duration={1500}>
+                        {" "}
+                        <div className="text-center mb-5">
+                            <p className=" text-white fs-3 mb-2">
+                                Ways to grow and support your business
+                            </p>
+                        </div>
+                    </Fade>
+
                     <div className="row justify-content-center">
                         <div className="col-md-9">
                             <Accordion>
@@ -309,7 +362,6 @@ function MarketingandPromotions() {
                     </div>
                 </div>
             </section>
-            
         </div>
     );
 }

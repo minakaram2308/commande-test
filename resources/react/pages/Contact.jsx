@@ -17,6 +17,7 @@ import greenLogo from "../../assets/images/greenLogo.png";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Font Awesome CSS
+import Fade from "react-reveal/Fade";
 
 function Contact() {
     return (
@@ -53,9 +54,12 @@ function Contact() {
             </nav>
             <div className="py-3 secBg text-center text-white">
                 <div className="container">
-                    <h3>
-                        Advice and answers from the Deliveroo Restaurants Team
-                    </h3>
+                    <Fade bottom duration={1500}>
+                        <h3>
+                            Advice and answers from the Deliveroo Restaurants
+                            Team
+                        </h3>
+                    </Fade>
                     {/* //search */}
                     <div className="mt-3">
                         <div className="input-group">
@@ -79,98 +83,142 @@ function Contact() {
             <section className="ArticlesList py-5">
                 <div className="container">
                     <div className="row gap-4">
-                        <div className="col-12">
-                            <div className="articleItem d-flex gap-4">
-                                <img src={article} className="my-auto" />
-                                <div className="articleContent">
-                                    <p className="fw-bold mb-2">
-                                        Get started on Deliveroo
-                                    </p>
-                                    <p className="smtxt mb-2">
-                                        Find out who to contact about general
-                                        enquiries, your menu and more
-                                    </p>
-                                    <div className="d-flex align-items-center gap-2">
-                                        <img
-                                            src={author}
-                                            style={{ width: "20px" }}
-                                        />
-                                        <p className="m-0">
-                                            By Berian and 3 others . 10 Articles
+                        <Fade bottom duration={1500}>
+                            <div className="col-12">
+                                <div className="articleItem d-flex gap-4">
+                                    <img src={article} className="my-auto" />
+                                    <div className="articleContent">
+                                        <p className="fw-bold mb-2">
+                                            Get started on Deliveroo
                                         </p>
+                                        <p className="smtxt mb-2">
+                                            Find out who to contact about
+                                            general enquiries, your menu and
+                                            more
+                                        </p>
+                                        <div className="d-flex align-items-center gap-2">
+                                            <img
+                                                src={author}
+                                                style={{ width: "20px" }}
+                                            />
+                                            <p className="m-0">
+                                                By Berian and 3 others . 10
+                                                Articles
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-12">
-                            <div className="articleItem d-flex gap-4">
-                                <img src={article} className="my-auto" />
-                                <div className="articleContent">
-                                    <p className="fw-bold mb-2">
-                                        Get started on Deliveroo
-                                    </p>
-                                    <p className="smtxt mb-2">
-                                        Find out who to contact about general
-                                        enquiries, your menu and more
-                                    </p>
-                                    <div className="d-flex align-items-center gap-2">
-                                        <img
-                                            src={author}
-                                            style={{ width: "20px" }}
-                                        />
-                                        <p className="m-0">
-                                            By Berian and 3 others . 10 Articles
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-12">
+                                <div className="articleItem d-flex gap-4">
+                                    <img src={article} className="my-auto" />
+                                    <div className="articleContent">
+                                        <p className="fw-bold mb-2">
+                                            Get started on Deliveroo
                                         </p>
+                                        <p className="smtxt mb-2">
+                                            Find out who to contact about
+                                            general enquiries, your menu and
+                                            more
+                                        </p>
+                                        <div className="d-flex align-items-center gap-2">
+                                            <img
+                                                src={author}
+                                                style={{ width: "20px" }}
+                                            />
+                                            <p className="m-0">
+                                                By Berian and 3 others . 10
+                                                Articles
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-12">
-                            <div className="articleItem d-flex gap-4">
-                                <img src={article} className="my-auto" />
-                                <div className="articleContent">
-                                    <p className="fw-bold mb-2">
-                                        Get started on Deliveroo
-                                    </p>
-                                    <p className="smtxt mb-2">
-                                        Find out who to contact about general
-                                        enquiries, your menu and more
-                                    </p>
-                                    <div className="d-flex align-items-center gap-2">
-                                        <img
-                                            src={author}
-                                            style={{ width: "20px" }}
-                                        />
-                                        <p className="m-0">
-                                            By Berian and 3 others . 10 Articles
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-12">
+                                <div className="articleItem d-flex gap-4">
+                                    <img src={article} className="my-auto" />
+                                    <div className="articleContent">
+                                        <p className="fw-bold mb-2">
+                                            Get started on Deliveroo
                                         </p>
+                                        <p className="smtxt mb-2">
+                                            Find out who to contact about
+                                            general enquiries, your menu and
+                                            more
+                                        </p>
+                                        <div className="d-flex align-items-center gap-2">
+                                            <img
+                                                src={author}
+                                                style={{ width: "20px" }}
+                                            />
+                                            <p className="m-0">
+                                                By Berian and 3 others . 10
+                                                Articles
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-12">
-                            <div className="articleItem d-flex gap-4">
-                                <img src={article} className="my-auto" />
-                                <div className="articleContent">
-                                    <p className="fw-bold mb-2">
-                                        Get started on Deliveroo
-                                    </p>
-                                    <p className="smtxt mb-2">
-                                        Find out who to contact about general
-                                        enquiries, your menu and more
-                                    </p>
-                                    <div className="d-flex align-items-center gap-2">
-                                        <img
-                                            src={author}
-                                            style={{ width: "20px" }}
-                                        />
-                                        <p className="m-0">
-                                            By Berian and 3 others . 10 Articles
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-12">
+                                <div className="articleItem d-flex gap-4">
+                                    <img src={article} className="my-auto" />
+                                    <div className="articleContent">
+                                        <p className="fw-bold mb-2">
+                                            Get started on Deliveroo
                                         </p>
+                                        <p className="smtxt mb-2">
+                                            Find out who to contact about
+                                            general enquiries, your menu and
+                                            more
+                                        </p>
+                                        <div className="d-flex align-items-center gap-2">
+                                            <img
+                                                src={author}
+                                                style={{ width: "20px" }}
+                                            />
+                                            <p className="m-0">
+                                                By Berian and 3 others . 10
+                                                Articles
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
+
+                        <Fade bottom duration={1500}>
+                            <div className="col-12">
+                                <div className="articleItem d-flex gap-4">
+                                    <img src={article} className="my-auto" />
+                                    <div className="articleContent">
+                                        <p className="fw-bold mb-2">
+                                            Get started on Deliveroo
+                                        </p>
+                                        <p className="smtxt mb-2">
+                                            Find out who to contact about
+                                            general enquiries, your menu and
+                                            more
+                                        </p>
+                                        <div className="d-flex align-items-center gap-2">
+                                            <img
+                                                src={author}
+                                                style={{ width: "20px" }}
+                                            />
+                                            <p className="m-0">
+                                                By Berian and 3 others . 10
+                                                Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Fade>
                     </div>
                 </div>
             </section>

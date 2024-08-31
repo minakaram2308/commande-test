@@ -20,6 +20,8 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Fade";
 
 function Login() {
     return (
@@ -32,13 +34,15 @@ function Login() {
                         </div>
                         <div className="col-md-6 d-flex">
                             <div className="loginContainer my-auto my-mob p-5">
-                                <img src={greenLogo} className="mb-4" />
+                            <Fade bottom duration={1500}> <img src={greenLogo} className="mb-4" />
                                 <h2>Welcome to <br /> Restaurent hub</h2>
                                 <p>
                                     Tap into data that helps you grow, check on
                                     sales, chart your progeress and attract new
                                     customers with special offers
-                                </p>
+                                </p></Fade>
+
+                               
 
                                 <div className="form-group mb-3">
                                     <label>Email address *</label>
