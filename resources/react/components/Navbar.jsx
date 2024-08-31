@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Modal from "./Modal";
 import greenLogo from "../../assets/images/greenLogo.png";
+
 function Navbar() {
     const location = useLocation();
     const isLogin = location.pathname === "/Login";
@@ -19,9 +20,9 @@ function Navbar() {
             }`}
         >
             <div className="container">
-                <a className="navbar-brand" to="#">
+                <Link className="navbar-brand" to="/">
                     <img src={logo} alt="" className="logoImg" />
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
