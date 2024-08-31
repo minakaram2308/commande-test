@@ -15,6 +15,8 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Fade";
 
 function RestaurantPartner() {
     const blocks = [
@@ -36,21 +38,26 @@ function RestaurantPartner() {
     ];
     return (
         <div className="layout">
-            
             <section className="RestaurantHeroSection">
-                <div className="heroContainer container">
-                    <h2>Become a Commande Restaurent partner</h2>
-                    <p>
-                    Let us help your grocery business reach more customers
-                    </p>
-                    <a className="btn btn-primary">Create account</a>
-                </div>
+                <Fade bottom duration={1500}>
+                    
+                    <div className="heroContainer container">
+                        <h2>Become a Commande Restaurent partner</h2>
+                        <p>
+                            Let us help your grocery business reach more
+                            customers
+                        </p>
+                        <a className="btn btn-primary">Create account</a>
+                    </div>
+                </Fade>
             </section>
             <ThreeBlocks blocks={blocks} classes={"negativeTop"} />
 
             <section className="deliveroo my-5 py-5">
                 <div className="container">
-                    <h3 className="text-center mb-5">How we can help grow your business</h3>
+                    <h3 className="text-center mb-5">
+                        How we can help grow your business
+                    </h3>
                     <div className="row">
                         <div className="col-md-6 d-flex">
                             <div className="my-auto">
@@ -108,67 +115,83 @@ function RestaurantPartner() {
 
             <section className="primaryBg py-5">
                 <div className="container my-3">
-                    <div className="text-center mb-5">
-                        <p className=" text-white fs-3 mb-2">
-                            How Deliveroo works for restaurant partners
-                        </p>
-                        <p className="text-white fs0p9">
-                            Fire up your kitchen for Deliveroo orders in a few
-                            easy steps
-                        </p>
-                    </div>
+                    <Fade bottom duration={1500}>
+                        
+                        <div className="text-center mb-5">
+                            <p className=" text-white fs-3 mb-2">
+                                How Deliveroo works for restaurant partners
+                            </p>
+                            <p className="text-white fs0p9">
+                                Fire up your kitchen for Deliveroo orders in a
+                                few easy steps
+                            </p>
+                        </div>
+                    </Fade>
+
                     <div className="container my-3">
                         <div className="row">
-                            <div className="col-md-6 d-flex">
-                                <img src={Steps} className="deliveroImg" />
-                            </div>
+                            <Fade bottom duration={1500}>
+                                
+                                <div className="col-md-6 d-flex">
+                                    <img src={Steps} className="deliveroImg" />
+                                </div>
+                            </Fade>
+
                             <div className="col-md-6 d-flex">
                                 <div className="my-auto">
-                                    <div className="stepBlock d-flex py-2 position-relative">
-                                        <div>
-                                            <div className="step-circle"></div>
-                                            <div className="dashed-line"></div>
+                                    <Fade bottom duration={1500}>
+                                        
+                                        <div className="stepBlock d-flex py-2 position-relative">
+                                            <div>
+                                                <div className="step-circle"></div>
+                                                <div className="dashed-line"></div>
+                                            </div>
+                                            <div className="ms-4 mt-1">
+                                                <p className="fs-5 text-white">
+                                                    Sign up
+                                                </p>
+                                                <p className="smtxt text-white">
+                                                    Tell us about your business
+                                                    - you'll need your FSA
+                                                    rating to get started
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div className="ms-4 mt-1">
-                                            <p className="fs-5 text-white">
-                                                Sign up
-                                            </p>
-                                            <p className="smtxt text-white">
-                                                Tell us about your business -
-                                                you'll need your FSA rating to
-                                                get started
-                                            </p>
+                                    </Fade>
+                                    <Fade bottom duration={1500}>
+                                        <div className="stepBlock d-flex py-2 position-relative">
+                                            <div>
+                                                <div className="step-circle"></div>
+                                                <div className="dashed-line"></div>
+                                            </div>
+                                            <div className="ms-4 mt-1">
+                                                <p className="fs-5 text-white">
+                                                    Set up
+                                                </p>
+                                                <p className="smtxt text-white">
+                                                    Upload a menu and share your
+                                                    store hours
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="stepBlock d-flex py-2 position-relative">
-                                        <div>
-                                            <div className="step-circle"></div>
-                                            <div className="dashed-line"></div>
+                                    </Fade>
+                                    <Fade bottom duration={1500}>
+                                        <div className="stepBlock d-flex py-2 position-relative">
+                                            <div>
+                                                <div className="step-circle"></div>
+                                            </div>
+                                            <div className="ms-4 mt-1">
+                                                <p className="fs-5 text-white">
+                                                    Sell
+                                                </p>
+                                                <p className="smtxt text-white">
+                                                    Watch the orders come in and
+                                                    track them via Restaurant
+                                                    Hub
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div className="ms-4 mt-1">
-                                            <p className="fs-5 text-white">
-                                                Set up
-                                            </p>
-                                            <p className="smtxt text-white">
-                                                Upload a menu and share your
-                                                store hours
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="stepBlock d-flex py-2 position-relative">
-                                        <div>
-                                            <div className="step-circle"></div>
-                                        </div>
-                                        <div className="ms-4 mt-1">
-                                            <p className="fs-5 text-white">
-                                                Sell
-                                            </p>
-                                            <p className="smtxt text-white">
-                                                Watch the orders come in and
-                                                track them via Restaurant Hub
-                                            </p>
-                                        </div>
-                                    </div>
+                                    </Fade>
                                 </div>
                             </div>
                         </div>
@@ -177,45 +200,55 @@ function RestaurantPartner() {
             </section>
 
             <section className="servicesSection">
-                <h3 className="text-center mb-5 text-white">
-                    Learn about our services for business like yours
-                </h3>
+                <Fade bottom duration={1500}>
+                    
+                    <h3 className="text-center mb-5 text-white">
+                        Learn about our services for business like yours
+                    </h3>
+                </Fade>
+
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
-                            <div className="servicesBlock serviesRestaurant">
-                                <div className="servicesContainer">
-                                    <h2>Restaurent</h2>
-                                    <p>
-                                        We can handle delivery, so you can focus
-                                        on the food
-                                    </p>
-                                    <a className="btn btn-primary">
-                                        Find out more
-                                    </a>
+                        <Slide left>
+                            
+                            <div className="col-md-6">
+                                <div className="servicesBlock serviesRestaurant">
+                                    <div className="servicesContainer">
+                                        <h2>Restaurent</h2>
+                                        <p>
+                                            We can handle delivery, so you can
+                                            focus on the food
+                                        </p>
+                                        <a className="btn btn-primary">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Grocery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary">
-                                        Find out more
-                                    </a>
+                        </Slide>
+                        <Slide right>
+                            <div className="col-md-6">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Grocery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Slide>
                     </div>
                 </div>
             </section>
 
             <section>
                 <div className="container mt-5">
+                    <Fade bottom duration={1500}></Fade>
                     <div className="createAccount d-flex justify-content-between align-items-center">
                         <p className="fs-4 text-white ms-5 mb-0">
                             Not a Commande partner yet?
@@ -228,6 +261,7 @@ function RestaurantPartner() {
 
             <section className="py-5">
                 <div className="container my-3">
+                    <Fade bottom duration={1500}></Fade>
                     <div className="text-center mb-5">
                         <p className="fs-3 mb-2">
                             Ways to grow and support your business
@@ -239,48 +273,57 @@ function RestaurantPartner() {
                     </div>
 
                     <div className="row">
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
@@ -358,7 +401,6 @@ function RestaurantPartner() {
                     </div>
                 </div>
             </section>
-            
         </div>
     );
 }

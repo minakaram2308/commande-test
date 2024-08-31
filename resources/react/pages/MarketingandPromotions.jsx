@@ -44,7 +44,6 @@ function MarketingandPromotions() {
         <div className="layout">
             <section className="MarketingsHeroSection">
                 <Fade bottom duration={1500}>
-                    {" "}
                     <div className="heroContainer container">
                         <h2>Marketing and Promotions</h2>
                         <p>
@@ -118,7 +117,6 @@ function MarketingandPromotions() {
 
             <section className="primaryBg py-5">
                 <Fade bottom duration={1500}>
-                    {" "}
                     <h3 className="text-center text-white mb-5">
                         What is Marketer?
                     </h3>
@@ -126,14 +124,13 @@ function MarketingandPromotions() {
 
                 <div className="container">
                     <Fade bottom duration={1500}>
-                        {" "}
                         <p className="text-white">
                             Marketer is a tool our partners can use to attract
                             customers looking for deals and the best value for
                             money. <br /> <br />
                             Promote your restaurant and implement marketing
                             strategies by creating offers for specific menu
-                            items or your whole menu, and set a minimum spend.{" "}
+                            items or your whole menu, and set a minimum spend.
                             <br /> <br />
                             Whoever you want to reach, you’ll get valuable
                             insights from every offer. From sales data and how
@@ -148,7 +145,6 @@ function MarketingandPromotions() {
             <section className="deliveroo my-5 py-5">
                 <div className="container">
                     <Fade bottom duration={1500}>
-                        {" "}
                         <p className="fs-2 mb-1 text-center">
                             Success with Marketer offers
                         </p>
@@ -187,7 +183,6 @@ function MarketingandPromotions() {
                         </Slide>
 
                         <Slide right>
-                            {" "}
                             <div className="col-md-6 d-flex">
                                 <img src={Deliveroo} className="deliveroImg" />
                             </div>
@@ -202,7 +197,6 @@ function MarketingandPromotions() {
                 <div className="container">
                     <div className="createAccount d-flex justify-content-between align-items-center">
                         <Fade bottom duration={1500}>
-                            {" "}
                             <p className="fs-4 text-white ms-5 mb-0">
                                 Not a Commande partner yet?
                             </p>
@@ -217,7 +211,6 @@ function MarketingandPromotions() {
             <section className="py-5">
                 <div className="container my-3">
                     <Fade bottom duration={1500}>
-                        {" "}
                         <div className="text-center mb-5">
                             <p className="fs-3 mb-2">
                                 Ways to grow and support your business
@@ -231,7 +224,6 @@ function MarketingandPromotions() {
 
                     <div className="row">
                         <Fade bottom duration={1500}>
-                            {" "}
                             <div className="col-md-4">
                                 <div className="servicesBlock serviesGrocery">
                                     <div className="servicesContainer">
@@ -248,7 +240,6 @@ function MarketingandPromotions() {
                             </div>
                         </Fade>
                         <Fade bottom duration={1500}>
-                            {" "}
                             <div className="col-md-4">
                                 <div className="servicesBlock serviesPickup">
                                     <div className="servicesContainer">
@@ -265,7 +256,6 @@ function MarketingandPromotions() {
                             </div>
                         </Fade>
                         <Fade bottom duration={1500}>
-                            {" "}
                             <div className="col-md-4">
                                 <div className="servicesBlock serviesMarketing">
                                     <div className="servicesContainer">
@@ -288,7 +278,6 @@ function MarketingandPromotions() {
             <section className="primaryBg py-5">
                 <div className="container my-3">
                     <Fade bottom duration={1500}>
-                        {" "}
                         <div className="text-center mb-5">
                             <p className=" text-white fs-3 mb-2">
                                 Ways to grow and support your business

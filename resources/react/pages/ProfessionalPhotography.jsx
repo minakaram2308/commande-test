@@ -17,6 +17,8 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Fade";
 
 function ProfessionalPhotography() {
     const blocks = [
@@ -38,13 +40,15 @@ function ProfessionalPhotography() {
     ];
     return (
         <div className="layout">
-            
             <section className="ProfessionalPhotographyHeroSection">
+                <Fade bottom duration={1500}>
                 <div className="heroContainer container">
                     <h2>Professional Restaurant Photography</h2>
                     <p>Boost sales by up to 24% by adding menu imagery</p>
                     <a className="btn btn-primary">Signup</a>
                 </div>
+                </Fade>
+             
             </section>
             <ThreeBlocks
                 blocks={blocks}
@@ -116,20 +120,23 @@ function ProfessionalPhotography() {
                 <div className="container my-auto">
                     <div className="row justify-content-end">
                         <div className="col-md-4">
-                            <div className="primaryBg text-white p-4">
-                                <h5>Great first impressions</h5>
-                                <p className="mt-3 mb-0 smtxt text-white">
-                                    Deliveroo connects customers with the best
-                                    food in their area - and like a bustling
-                                    food hall, the competition is hot.
-                                    <br />
-                                    <br /> Professional food photography helps
-                                    more customers to choose your restaurant.
-                                    Showcasing your best dishes brings your menu
-                                    to life and lets hungry customers decide
-                                    what to order.
-                                </p>
-                            </div>
+                            <Fade bottom duration={1500}>
+                                <div className="primaryBg text-white p-4">
+                                    <h5>Great first impressions</h5>
+                                    <p className="mt-3 mb-0 smtxt text-white">
+                                        Deliveroo connects customers with the
+                                        best food in their area - and like a
+                                        bustling food hall, the competition is
+                                        hot.
+                                        <br />
+                                        <br /> Professional food photography
+                                        helps more customers to choose your
+                                        restaurant. Showcasing your best dishes
+                                        brings your menu to life and lets hungry
+                                        customers decide what to order.
+                                    </p>
+                                </div>
+                            </Fade>
                         </div>
                     </div>
                 </div>
@@ -137,67 +144,80 @@ function ProfessionalPhotography() {
 
             <section className="pt-4">
                 <div className="container mt-5">
-                    <div className="createAccount d-flex justify-content-between align-items-center">
-                        <p className="fs-4 text-white ms-5 mb-0">
-                            Not a Commande partner yet?
-                        </p>
-                        <a className="btn btn-primary mx-5">Create Account</a>
-                    </div>
+                    <Fade bottom duration={1500}>
+                        <div className="createAccount d-flex justify-content-between align-items-center">
+                            <p className="fs-4 text-white ms-5 mb-0">
+                                Not a Commande partner yet?
+                            </p>
+                            <a className="btn btn-primary mx-5">
+                                Create Account
+                            </a>
+                        </div>
+                    </Fade>
                 </div>
             </section>
 
             <section className="py-5">
                 <div className="container my-3">
-                    <div className="text-center mb-5">
-                        <p className="fs-3 mb-2">
-                            Ways to grow and support your business
-                        </p>
-                        <p className="fs0p9">
-                            Products, services and information for your success
-                            as a Deliveroo partner
-                        </p>
-                    </div>
+                    <Fade bottom duration={1500}>
+                        <div className="text-center mb-5">
+                            <p className="fs-3 mb-2">
+                                Ways to grow and support your business
+                            </p>
+                            <p className="fs0p9">
+                                Products, services and information for your
+                                success as a Deliveroo partner
+                            </p>
+                        </div>
+                    </Fade>
 
                     <div className="row justify-content-center">
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Pickup</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Pickup</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
 
             <section className="primaryBg py-5">
                 <div className="container my-3">
-                    <div className="text-center mb-5">
-                        <p className=" text-white fs-3 mb-2">
-                            Frequently asked questions
-                        </p>
-                    </div>
+                    <Fade bottom duration={1500}>
+                        <div className="text-center mb-5">
+                            <p className=" text-white fs-3 mb-2">
+                                Frequently asked questions
+                            </p>
+                        </div>
+                    </Fade>
+
                     <div className="row justify-content-center">
                         <div className="col-md-9">
                             <Accordion>
@@ -264,7 +284,6 @@ function ProfessionalPhotography() {
                     </div>
                 </div>
             </section>
-            
         </div>
     );
 }

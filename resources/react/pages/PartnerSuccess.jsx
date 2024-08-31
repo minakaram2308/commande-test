@@ -19,6 +19,8 @@ import Accordion from "react-bootstrap/Accordion";
 import { FaCheck } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Fade";
 
 function PartnerSuccess() {
     const blocks = [
@@ -43,18 +45,22 @@ function PartnerSuccess() {
     ];
     return (
         <div className="layout">
-            
             <section className="PartnerSuccessHeroSection">
-                <div className="heroContainer container">
-                    <h2>Partner success tools</h2>
-                    <p>
-                        Support your success on Deliveroo with our tools and
-                        resources.Learn more about Restaurant Hub,
-                        <br />
-                        Marketer and our range of other partner products
-                    </p>
-                    <a className="btn btn-primary">Become a Commande Partner</a>
-                </div>
+                <Fade bottom duration={1500}>
+                    
+                    <div className="heroContainer container">
+                        <h2>Partner success tools</h2>
+                        <p>
+                            Support your success on Deliveroo with our tools and
+                            resources.Learn more about Restaurant Hub,
+                            <br />
+                            Marketer and our range of other partner products
+                        </p>
+                        <a className="btn btn-primary">
+                            Become a Commande Partner
+                        </a>
+                    </div>
+                </Fade>
             </section>
 
             <section className="primaryBg py-5">
@@ -68,48 +74,57 @@ function PartnerSuccess() {
                 </h3>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
@@ -117,250 +132,288 @@ function PartnerSuccess() {
             <section className="py-5">
                 <div className="container my-3">
                     <div className="text-center mb-5">
-                        <p className="fs-3 mb-2">
-                        Tools for success
-                        </p>
+                        <p className="fs-3 mb-2">Tools for success</p>
                     </div>
 
                     <div className="row justify-content-center">
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
 
             <section className="primaryBg py-5">
                 <p className="fs-3 text-center text-white mb-4">
-                Services to help you succeed
+                    Services to help you succeed
                 </p>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesGrocery">
-                                <div className="servicesContainer">
-                                    <h2>Packaging</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesGrocery">
+                                    <div className="servicesContainer">
+                                        <h2>Packaging</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesPickup">
-                                <div className="servicesContainer">
-                                    <h2>Technology</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesPickup">
+                                    <div className="servicesContainer">
+                                        <h2>Technology</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="servicesBlock serviesMarketing">
-                                <div className="servicesContainer">
-                                    <h2>Delivery</h2>
-                                    <p>
-                                        We'll increase your sales with new,
-                                        online customers
-                                    </p>
-                                    <a className="btn btn-primary mt-3">
-                                        Find out more
-                                    </a>
+                        </Fade>
+                        <Fade bottom duration={1500}>
+                            <div className="col-md-4">
+                                <div className="servicesBlock serviesMarketing">
+                                    <div className="servicesContainer">
+                                        <h2>Delivery</h2>
+                                        <p>
+                                            We'll increase your sales with new,
+                                            online customers
+                                        </p>
+                                        <a className="btn btn-primary mt-3">
+                                            Find out more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
-            
         </div>
     );
 }

@@ -165,7 +165,7 @@ function ManageBusiness() {
 
                     <div className="row">
                         <Fade bottom duration={1500}>
-                            {" "}
+                            
                             <div className="col-md-4">
                                 <div className="servicesBlock serviesGrocery">
                                     <div className="servicesContainer">
@@ -182,7 +182,7 @@ function ManageBusiness() {
                             </div>
                         </Fade>
                         <Fade bottom duration={1500}>
-                            {" "}
+                            
                             <div className="col-md-4">
                                 <div className="servicesBlock serviesPickup">
                                     <div className="servicesContainer">
@@ -199,7 +199,7 @@ function ManageBusiness() {
                             </div>
                         </Fade>
                         <Fade bottom duration={1500}>
-                            {" "}
+                            
                             <div className="col-md-4">
                                 <div className="servicesBlock serviesMarketing">
                                     <div className="servicesContainer">
@@ -223,7 +223,7 @@ function ManageBusiness() {
                 <div className="container my-3">
                     <div className="text-center mb-5">
                         <Fade bottom duration={1500}>
-                            {" "}
+                            
                             <p className=" text-white fs-3 mb-2">
                                 Ways to grow and support your business
                             </p>
