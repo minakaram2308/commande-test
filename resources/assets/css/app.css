@@ -31,10 +31,11 @@ a{
     color: #059372;
 }
 .bg-fadeBlack {
-    background-color: #0000009e;
+    background-color: #000000c9;
     position: absolute;
     width: 100%;
     padding: 1rem 0;
+    z-index: 5;
 }
 .btn-primary {
     background-color: #059372;
@@ -339,7 +340,15 @@ button:focus:not(:focus-visible) {
     object-position: center;
     border-radius: 12px;
 }
-
+.b-0{
+    border: none;
+}
+.searchInput::placeholder{
+    color: #fff;
+}
+.fadePrimaryBg{
+    background-color: #57b7a1;
+}
 .h100vh {
     height: calc(100vh - 82px);
 }
@@ -490,7 +499,12 @@ footer {
     font-size: 24px;
     cursor: pointer;
   }
-  
+
+  .articleItem{
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+  }
 @media only screen and (max-width: 768px) {
     .heroSection,
     .groceryHeroSection,

@@ -179,19 +179,19 @@ function Navbar() {
                                 aria-labelledby="navbarDropdown"
                             >
                                 <li>
-                                    <a className="dropdown-item" to="/">
+                                    <Link className="dropdown-item" to="/Contact">
                                         Resources
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" to="/">
+                                    <Link className="dropdown-item" to="/Contact">
                                         Contact
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" to="/">
+                                    <Link className="dropdown-item" to="/Contact">
                                         Help
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>

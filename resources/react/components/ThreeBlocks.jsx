@@ -10,14 +10,14 @@ function ThreeBlocks({ blocks, classes, noTitle }) {
                 )}
                 <div className="row">
                     {blocks.map((block, index) => (
-          <Slide
-          {...(index === 1
-            ? { bottom: true }
-            : index === 2
-            ? { right: true }
-            : { left: true })}
-          key={index}
-        >
+                        <Slide
+                            {...(index === 1
+                                ? { bottom: true }
+                                : index === 2
+                                ? { right: true }
+                                : { left: true })}
+                            key={index}
+                        >
                             <div className="col-md-4">
                                 <img
                                     src={block.iconPath}
